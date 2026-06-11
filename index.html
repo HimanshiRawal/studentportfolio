@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarav Sharma | Student Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d14;
+    --bg2: #13131e;
+    --bg3: #1a1a28;
+    --card: #1e1e2e;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.12);
+    --text: #f0eff8;
+    --muted: #8b8a9e;
+    --accent: #7c6af7;
+    --accent2: #5dd6b0;
+    --accent3: #f7a16a;
+    --red: #f06a7c;
+    --gold: #f5c842;
+    --r: 12px;
+    --r2: 20px;
+  }
+  .light {
+    --bg: #f5f4ff;
+    --bg2: #eceaf9;
+    --bg3: #f0eeff;
+    --card: #fff;
+    --border: rgba(0,0,0,0.07);
+    --border2: rgba(0,0,0,0.13);
+    --text: #1a1a2e;
+    --muted: #6b6a80;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    transition: background 0.4s, color 0.4s;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: rgba(13,13,20,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+    transition: background 0.4s;
+  }
+  .light nav { background: rgba(245,244,255,0.9); }
+  .nav-logo {
+    font-size: 1.1rem; font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .nav-links { display: flex; gap: 0.2rem; list-style: none; align-items: center; }
+  .nav-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 13px; font-weight: 500; padding: 6px 12px;
+    border-radius: 8px; transition: all 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); background: var(--bg3); }
+  .nav-right { display: flex; align-items: center; gap: 12px; }
+  .dark-toggle {
+    background: var(--bg3); border: 1px solid var(--border2);
+    color: var(--text); border-radius: 50px; padding: 6px 14px;
+    cursor: pointer; font-size: 13px; font-family: inherit;
+    transition: all 0.2s;
+  }
+  .dark-toggle:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--text); margin: 5px 0; border-radius: 2px; transition: all 0.3s; }
+  .mobile-menu {
+    display: none; position: fixed; top: 60px; left: 0; right: 0;
+    background: var(--bg2); border-bottom: 1px solid var(--border);
+    padding: 1rem; z-index: 998;
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a { display: block; padding: 10px 16px; color: var(--text); text-decoration: none; border-radius: 8px; }
+  .mobile-menu a:hover { background: var(--bg3); }
+
+  /* HERO */
+  #hero {
+    min-height: 100vh; display: flex; align-items: center;
+    padding: 80px 2rem 4rem;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg-orb {
+    position: absolute; border-radius: 50%; pointer-events: none;
+    filter: blur(80px); opacity: 0.15;
+  }
+  .orb1 { width: 500px; height: 500px; background: var(--accent); top: -100px; right: -100px; }
+  .orb2 { width: 350px; height: 350px; background: var(--accent2); bottom: 0; left: -80px; }
+  .hero-inner {
+    max-width: 1100px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 380px; gap: 4rem; align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(124,106,247,0.12); border: 1px solid rgba(124,106,247,0.25);
+    border-radius: 50px; padding: 6px 16px; font-size: 12px; font-weight: 500;
+    color: #a89ef9; margin-bottom: 1.5rem; letter-spacing: 0.5px;
+  }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent2); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+  h1.hero-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 1.1; font-weight: 400; margin-bottom: 1rem;
+    letter-spacing: -1px;
+  }
+  h1.hero-name span { color: var(--accent); }
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.5rem;
+  }
+  .meta-pill {
+    background: var(--bg3); border: 1px solid var(--border2);
+    border-radius: 50px; padding: 5px 14px; font-size: 13px; color: var(--muted);
+  }
+  .meta-pill strong { color: var(--text); }
+  .hero-intro {
+    font-size: 1rem; color: var(--muted); max-width: 520px;
+    margin-bottom: 2rem; line-height: 1.8;
+  }
+  .hero-intro em { color: var(--accent2); font-style: normal; font-weight: 600; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--accent); color: #fff; border: none;
+    border-radius: 50px; padding: 12px 28px; font-size: 14px;
+    font-family: inherit; font-weight: 600; cursor: pointer;
+    text-decoration: none; transition: all 0.2s; display: inline-block;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(124,106,247,0.4); }
+  .btn-outline {
+    background: transparent; color: var(--text);
+    border: 1px solid var(--border2); border-radius: 50px;
+    padding: 12px 28px; font-size: 14px; font-family: inherit;
+    font-weight: 600; cursor: pointer; text-decoration: none;
+    display: inline-block; transition: all 0.2s;
+  }
+  .btn-outline:hover { background: var(--bg3); border-color: var(--accent); color: var(--accent); }
+  .hero-stats {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 1px;
+    background: var(--border); border-radius: var(--r); overflow: hidden;
+    margin-top: 2.5rem; border: 1px solid var(--border);
+  }
+  .stat-box {
+    background: var(--bg2); padding: 1rem; text-align: center;
+  }
+  .stat-num {
+    font-size: 1.8rem; font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    display: block;
+  }
+  .stat-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .hero-photo-wrap {
+    display: flex; flex-direction: column; align-items: center; gap: 1rem;
+  }
+  .photo-frame {
+    width: 280px; height: 320px; border-radius: var(--r2);
+    background: linear-gradient(135deg, var(--bg3), var(--card));
+    border: 1px solid var(--border2); display: flex; align-items: center;
+    justify-content: center; position: relative; overflow: hidden;
+  }
+  .photo-frame::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(124,106,247,0.1), rgba(93,214,176,0.1));
+  }
+  .photo-initials {
+    font-family: 'DM Serif Display', serif;
+    font-size: 5rem; color: var(--accent); opacity: 0.6; position: relative; z-index: 1;
+  }
+  .photo-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+  .photo-tag {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 50px; padding: 4px 12px; font-size: 12px; color: var(--muted);
+  }
+
+  /* SECTION COMMON */
+  section { padding: 5rem 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+  }
+  h2.section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 400; line-height: 1.2; margin-bottom: 1rem;
+  }
+  .section-sub { color: var(--muted); max-width: 540px; font-size: 15px; }
+  .section-head { margin-bottom: 3rem; }
+  .divider { height: 1px; background: var(--border); margin: 0; }
+
+  /* CARD */
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 1.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover { border-color: var(--border2); transform: translateY(-3px); }
+
+  /* ABOUT */
+  #about { background: var(--bg2); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+  .about-fields { display: flex; flex-direction: column; gap: 12px; }
+  .field-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 16px; background: var(--bg3);
+    border-radius: var(--r); border: 1px solid var(--border);
+  }
+  .field-icon { font-size: 1.2rem; width: 28px; text-align: center; }
+  .field-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .field-val { font-size: 14px; font-weight: 600; }
+  .about-desc { color: var(--muted); font-size: 15px; line-height: 1.8; margin-bottom: 1.5rem; }
+  .interests-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .interest-chip {
+    background: rgba(124,106,247,0.1); border: 1px solid rgba(124,106,247,0.2);
+    color: #a89ef9; border-radius: 50px; padding: 5px 14px; font-size: 13px;
+    font-weight: 500; transition: all 0.2s; cursor: default;
+  }
+  .interest-chip:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  /* ACADEMICS */
+  .subjects-table { width: 100%; border-collapse: collapse; }
+  .subjects-table th {
+    text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: var(--muted); padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .subjects-table td { padding: 14px 16px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .subjects-table tr:last-child td { border-bottom: none; }
+  .grade-badge {
+    display: inline-block; padding: 3px 10px; border-radius: 6px;
+    font-size: 12px; font-weight: 700;
+  }
+  .g-aplus { background: rgba(93,214,176,0.15); color: var(--accent2); }
+  .g-a { background: rgba(124,106,247,0.15); color: var(--accent); }
+  .g-bplus { background: rgba(247,161,106,0.15); color: var(--accent3); }
+  .grade-bar-wrap { background: var(--bg3); border-radius: 50px; height: 6px; width: 100%; margin-top: 6px; overflow: hidden; }
+  .grade-bar { height: 100%; border-radius: 50px; background: linear-gradient(90deg, var(--accent), var(--accent2)); transition: width 1s cubic-bezier(0.4,0,0.2,1); }
+  .overall-banner {
+    margin-top: 1.5rem; background: linear-gradient(135deg, rgba(124,106,247,0.1), rgba(93,214,176,0.1));
+    border: 1px solid rgba(124,106,247,0.2); border-radius: var(--r);
+    padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between;
+  }
+  .overall-pct { font-size: 2rem; font-weight: 700; color: var(--accent2); }
+
+  /* CLUBS */
+  #clubs { background: var(--bg2); }
+  .clubs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+  .club-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 1.5rem;
+    transition: all 0.25s; cursor: default;
+  }
+  .club-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+  .club-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+  .club-name { font-weight: 700; font-size: 15px; margin-bottom: 0.25rem; }
+  .club-years { font-size: 12px; color: var(--muted); margin-bottom: 0.75rem; }
+  .club-bullets { list-style: none; }
+  .club-bullets li { font-size: 12px; color: var(--muted); padding: 2px 0; padding-left: 14px; position: relative; }
+  .club-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--accent2); font-size: 10px; top: 4px; }
+
+  /* COMPETITIONS */
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content: ''; position: absolute; left: 7px; top: 0; bottom: 0;
+    width: 2px; background: linear-gradient(180deg, var(--accent), var(--accent2), transparent);
+  }
+  .tl-item { position: relative; margin-bottom: 1.5rem; }
+  .tl-dot {
+    position: absolute; left: -2rem; top: 4px;
+    width: 16px; height: 16px; border-radius: 50%;
+    border: 2px solid var(--accent); background: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tl-dot-inner { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .tl-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 1rem 1.25rem;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; transition: all 0.2s;
+  }
+  .tl-card:hover { border-color: var(--border2); }
+  .tl-comp { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+  .tl-year { font-size: 12px; color: var(--muted); }
+  .medal {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 12px; border-radius: 50px; font-size: 12px; font-weight: 700;
+    white-space: nowrap;
+  }
+  .gold { background: rgba(245,200,66,0.15); color: var(--gold); border: 1px solid rgba(245,200,66,0.3); }
+  .silver { background: rgba(180,180,200,0.15); color: #b4b4c8; border: 1px solid rgba(180,180,200,0.3); }
+  .bronze { background: rgba(200,140,80,0.15); color: #c87840; border: 1px solid rgba(200,140,80,0.3); }
+  .finalist { background: rgba(93,214,176,0.1); color: var(--accent2); border: 1px solid rgba(93,214,176,0.25); }
+  .participation { background: rgba(180,180,200,0.08); color: var(--muted); border: 1px solid var(--border); }
+
+  /* PROJECTS */
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+  .project-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r2); overflow: hidden;
+    transition: all 0.25s; cursor: default;
+  }
+  .project-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.3); }
+  .project-thumb {
+    height: 160px; display: flex; align-items: center; justify-content: center;
+    font-size: 3.5rem; position: relative; overflow: hidden;
+  }
+  .project-body { padding: 1.25rem; }
+  .project-type {
+    font-size: 10px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+  }
+  .project-name { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .project-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 0.75rem; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .project-tag {
+    font-size: 11px; background: var(--bg3); color: var(--muted);
+    padding: 3px 9px; border-radius: 50px;
+  }
+  .award-banner {
+    font-size: 11px; background: rgba(245,200,66,0.1); color: var(--gold);
+    padding: 5px 12px; margin: 0.75rem -1.25rem -1.25rem;
+    border-top: 1px solid rgba(245,200,66,0.2); text-align: center; font-weight: 600;
+  }
+
+  /* CERTIFICATES */
+  #certs { background: var(--bg2); }
+  .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+  .cert-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 1.25rem; text-align: center;
+    cursor: pointer; transition: all 0.25s;
+  }
+  .cert-card:hover { border-color: var(--gold); transform: scale(1.03); }
+  .cert-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+  .cert-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .cert-issuer { font-size: 11px; color: var(--muted); }
+
+  /* SKILLS */
+  .skills-outer { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+  .skill-group-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
+  }
+  .skill-item { margin-bottom: 1rem; }
+  .skill-top { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 13px; }
+  .skill-name { font-weight: 500; }
+  .skill-pct { color: var(--muted); font-size: 12px; }
+  .skill-track { background: var(--bg3); border-radius: 50px; height: 5px; overflow: hidden; }
+  .skill-fill {
+    height: 100%; border-radius: 50px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    width: 0; transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  /* BLOG */
+  .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+  .blog-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 1.5rem;
+    transition: all 0.25s; cursor: pointer;
+  }
+  .blog-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .blog-tag {
+    font-size: 10px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; padding: 3px 10px; border-radius: 50px;
+    margin-bottom: 0.75rem; display: inline-block;
+  }
+  .blog-date { font-size: 12px; color: var(--muted); margin-bottom: 0.5rem; }
+  .blog-title { font-size: 1rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.5rem; }
+  .blog-excerpt { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .blog-more { font-size: 12px; color: var(--accent); margin-top: 0.75rem; font-weight: 600; }
+  /* Blog modal */
+  .blog-overlay {
+    display: none; position: fixed; inset: 0; z-index: 2000;
+    background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+    align-items: center; justify-content: center; padding: 1rem;
+  }
+  .blog-overlay.open { display: flex; }
+  .blog-modal {
+    background: var(--card); border: 1px solid var(--border2);
+    border-radius: var(--r2); max-width: 620px; width: 100%;
+    max-height: 85vh; overflow-y: auto; padding: 2rem;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 1rem; right: 1rem;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 50%; width: 32px; height: 32px;
+    cursor: pointer; font-size: 1rem; color: var(--text);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .blog-modal h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.3; }
+  .blog-modal p { font-size: 14px; color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
+
+  /* TESTIMONIALS */
+  #testimonials { background: var(--bg2); }
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+  .testi-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 1.5rem; position: relative;
+  }
+  .testi-quote {
+    font-size: 3rem; line-height: 0.5; color: var(--accent);
+    opacity: 0.3; position: absolute; top: 1rem; left: 1.25rem;
+    font-family: Georgia, serif;
+  }
+  .testi-text { font-size: 14px; color: var(--muted); line-height: 1.8; padding-top: 1.5rem; margin-bottom: 1rem; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 10px; }
+  .testi-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px;
+  }
+  .testi-name { font-weight: 700; font-size: 13px; }
+  .testi-role { font-size: 11px; color: var(--muted); }
+  .stars { color: var(--gold); font-size: 12px; margin-bottom: 0.5rem; }
+
+  /* CONTACT */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .contact-info { display: flex; flex-direction: column; gap: 1rem; }
+  .contact-row {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 16px; background: var(--bg3);
+    border: 1px solid var(--border); border-radius: var(--r);
+  }
+  .contact-icon {
+    width: 40px; height: 40px; border-radius: var(--r);
+    background: rgba(124,106,247,0.15);
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .contact-lbl { font-size: 11px; color: var(--muted); }
+  .contact-val { font-size: 14px; font-weight: 600; }
+  .social-row { display: flex; gap: 10px; margin-top: 0.5rem; }
+  .social-btn {
+    width: 42px; height: 42px; border-radius: var(--r);
+    background: var(--bg3); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; text-decoration: none; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .social-btn:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+  .form-group { margin-bottom: 1rem; }
+  .form-group label { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .form-group input, .form-group textarea {
+    width: 100%; background: var(--bg3); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 10px 14px; color: var(--text);
+    font-family: inherit; font-size: 14px; outline: none; resize: none;
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus, .form-group textarea:focus { border-color: var(--accent); }
+  .form-success {
+    display: none; background: rgba(93,214,176,0.1);
+    border: 1px solid rgba(93,214,176,0.3); color: var(--accent2);
+    border-radius: var(--r); padding: 12px 16px; font-size: 14px;
+    text-align: center; margin-top: 0.5rem;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--bg2); border-top: 1px solid var(--border);
+    padding: 2rem; text-align: center;
+  }
+  footer p { color: var(--muted); font-size: 13px; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  /* SCROLL ANIMATIONS */
+  .fade-up {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-photo-wrap { order: -1; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+    .hamburger { display: block; }
+  }
+  @media (max-width: 600px) {
+    section { padding: 3.5rem 1.25rem; }
+    nav { padding: 0 1.25rem; }
+    #hero { padding-top: 70px; }
+    .photo-frame { width: 220px; height: 260px; }
+    .hero-stats { grid-template-columns: 1fr 1fr 1fr; }
+    .tl-card { flex-direction: column; align-items: flex-start; }
+    .projects-grid, .blog-grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">AS</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#clubs">Clubs</a></li>
+    <li><a href="#competitions">Achievements</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="dark-toggle" id="themeBtn" onclick="toggleTheme()">☀ Light</button>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#academics" onclick="closeMenu()">Academics</a>
+  <a href="#clubs" onclick="closeMenu()">Clubs</a>
+  <a href="#competitions" onclick="closeMenu()">Achievements</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#blog" onclick="closeMenu()">Blog</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-inner container">
+    <div>
+      <div class="hero-badge"><span class="badge-dot"></span> GEMMA Club Student Portfolio</div>
+      <h1 class="hero-name">Aarav<br><span>Sharma</span></h1>
+      <div class="hero-meta">
+        <span class="meta-pill">📚 <strong>Grade 8</strong></span>
+        <span class="meta-pill">🏫 <strong>Sunrise International School</strong></span>
+        <span class="meta-pill">📍 Mumbai, India</span>
+      </div>
+      <p class="hero-intro">
+        I am passionate about <em>mathematics</em>, <em>coding</em>, <em>public speaking</em>, and <em>scientific innovation</em>. Through GEMMA Clubs, I continuously develop my skills and participate in national and international competitions.
+      </p>
+      <div class="hero-ctas">
+        <a href="#about" class="btn-primary">Explore Portfolio</a>
+        <a href="javascript:void(0)" onclick="downloadResume()" class="btn-outline">⬇ Download Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box"><span class="stat-num" data-count="5">0</span><span class="stat-lbl">GEMMA Clubs</span></div>
+        <div class="stat-box"><span class="stat-num" data-count="6">0</span><span class="stat-lbl">Competitions</span></div>
+        <div class="stat-box"><span class="stat-num" data-count="92">0</span><span class="stat-lbl">% Score</span></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="photo-frame">
+        <span class="photo-initials">A</span>
+      </div>
+      <div class="photo-tags">
+        <span class="photo-tag">🧮 Abacus</span>
+        <span class="photo-tag">💻 Coding</span>
+        <span class="photo-tag">🔬 Science</span>
+        <span class="photo-tag">🎤 Speaker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Who I Am</div>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">A curious, driven student who believes that learning never stops — inside or outside the classroom.</p>
+    </div>
+    <div class="about-grid">
+      <div class="fade-up">
+        <p class="about-desc">Growing up with a deep fascination for numbers and technology, I have always sought challenges that push my thinking forward. Whether it's solving complex math problems, building a Scratch project, or presenting ideas on stage, I approach everything with enthusiasm and dedication.</p>
+        <p class="about-desc">My dream is to become an <strong style="color:var(--accent2)">Aerospace Engineer</strong> — someone who contributes to humanity's journey beyond Earth. Every competition, project, and club activity brings me one step closer to that vision.</p>
+        <div style="margin-top:1.5rem">
+          <p style="font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;font-weight:700;">Interests &amp; Hobbies</p>
+          <div class="interests-grid">
+            <span class="interest-chip">🧮 Mental Math</span>
+            <span class="interest-chip">💻 Coding</span>
+            <span class="interest-chip">🤖 Robotics</span>
+            <span class="interest-chip">🎤 Public Speaking</span>
+            <span class="interest-chip">♟ Chess</span>
+            <span class="interest-chip">🔬 Science Experiments</span>
+            <span class="interest-chip">🎨 Digital Design</span>
+            <span class="interest-chip">📖 Reading</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-fields fade-up">
+        <div class="field-row"><span class="field-icon">👤</span><div><div class="field-label">Full Name</div><div class="field-val">Aarav Rajan Sharma</div></div></div>
+        <div class="field-row"><span class="field-icon">🎂</span><div><div class="field-label">Date of Birth</div><div class="field-val">14 March 2011</div></div></div>
+        <div class="field-row"><span class="field-icon">📚</span><div><div class="field-label">Grade / Class</div><div class="field-val">Grade 8 — Section A</div></div></div>
+        <div class="field-row"><span class="field-icon">🏫</span><div><div class="field-label">School</div><div class="field-val">Sunrise International School</div></div></div>
+        <div class="field-row"><span class="field-icon">📍</span><div><div class="field-label">City / Country</div><div class="field-val">Mumbai, India</div></div></div>
+        <div class="field-row"><span class="field-icon">🚀</span><div><div class="field-label">Career Goal</div><div class="field-val">Aerospace Engineer</div></div></div>
+        <div class="field-row"><span class="field-icon">🌐</span><div><div class="field-label">Languages</div><div class="field-val">English, Hindi, Marathi</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ACADEMICS -->
+<section id="academics">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Grade 8 Results</div>
+      <h2 class="section-title">Academic Performance</h2>
+      <p class="section-sub">Consistent excellence across all core subjects — with a special passion for STEM.</p>
+    </div>
+    <div class="fade-up card" style="padding:0;overflow:hidden">
+      <table class="subjects-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th style="min-width:160px">Progress</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>📐 Mathematics</td>
+            <td><span class="grade-badge g-aplus">A+</span></td>
+            <td><div class="grade-bar-wrap"><div class="grade-bar" data-w="98"></div></div></td>
+            <td style="color:var(--accent2);font-weight:700">98%</td>
+          </tr>
+          <tr>
+            <td>🔬 Science</td>
+            <td><span class="grade-badge g-a">A</span></td>
+            <td><div class="grade-bar-wrap"><div class="grade-bar" data-w="92"></div></div></td>
+            <td style="color:var(--accent);font-weight:700">92%</td>
+          </tr>
+          <tr>
+            <td>📖 English</td>
+            <td><span class="grade-badge g-a">A</span></td>
+            <td><div class="grade-bar-wrap"><div class="grade-bar" data-w="90"></div></div></td>
+            <td style="color:var(--accent);font-weight:700">90%</td>
+          </tr>
+          <tr>
+            <td>💻 Computer Science</td>
+            <td><span class="grade-badge g-aplus">A+</span></td>
+            <td><div class="grade-bar-wrap"><div class="grade-bar" data-w="97"></div></div></td>
+            <td style="color:var(--accent2);font-weight:700">97%</td>
+          </tr>
+          <tr>
+            <td>🌍 Social Studies</td>
+            <td><span class="grade-badge g-bplus">B+</span></td>
+            <td><div class="grade-bar-wrap"><div class="grade-bar" data-w="85"></div></div></td>
+            <td style="color:var(--accent3);font-weight:700">85%</td>
+          </tr>
+          <tr>
+            <td>🎨 Art & Design</td>
+            <td><span class="grade-badge g-a">A</span></td>
+            <td><div class="grade-bar-wrap"><div class="grade-bar" data-w="91"></div></div></td>
+            <td style="color:var(--accent);font-weight:700">91%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="overall-banner">
+        <div>
+          <p style="font-size:13px;color:var(--muted)">Academic Year 2023–24</p>
+          <p style="font-weight:700">Overall Result — <span style="color:var(--accent2)">Distinction</span></p>
+        </div>
+        <div style="text-align:right">
+          <p style="font-size:12px;color:var(--muted)">Overall Percentage</p>
+          <p class="overall-pct">92%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CLUBS -->
+<section id="clubs">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Extracurricular</div>
+      <h2 class="section-title">GEMMA Club Participation</h2>
+      <p class="section-sub">Five clubs, endless learning — each one shaping a different dimension of who I am.</p>
+    </div>
+    <div class="clubs-grid">
+      <div class="club-card fade-up">
+        <div class="club-icon">🧮</div>
+        <div class="club-name">Abacus Club</div>
+        <div class="club-years">2 years · State-level finalist</div>
+        <ul class="club-bullets">
+          <li>Mastered 2-rod to 4-rod techniques</li>
+          <li>Mentors junior students</li>
+          <li>State-level finalist 2023</li>
+        </ul>
+      </div>
+      <div class="club-card fade-up" style="animation-delay:0.08s">
+        <div class="club-icon">📐</div>
+        <div class="club-name">Mathematics Club</div>
+        <div class="club-years">2 years · Club Secretary</div>
+        <ul class="club-bullets">
+          <li>Competed in 3 olympiads</li>
+          <li>Led weekly problem-solving sessions</li>
+          <li>Developed a math puzzle booklet</li>
+        </ul>
+      </div>
+      <div class="club-card fade-up" style="animation-delay:0.12s">
+        <div class="club-icon">💻</div>
+        <div class="club-name">Coding Club</div>
+        <div class="club-years">1.5 years · Active member</div>
+        <ul class="club-bullets">
+          <li>Built 5 Scratch projects</li>
+          <li>Learning HTML, CSS & Python basics</li>
+          <li>Participated in 2 coding challenges</li>
+        </ul>
+      </div>
+      <div class="club-card fade-up" style="animation-delay:0.16s">
+        <div class="club-icon">🎤</div>
+        <div class="club-name">Public Speaking Club</div>
+        <div class="club-years">1 year · Vice President</div>
+        <ul class="club-bullets">
+          <li>Represented school at international event</li>
+          <li>Coaches juniors in debate preparation</li>
+          <li>Bronze at Intl. Speaker Competition</li>
+        </ul>
+      </div>
+      <div class="club-card fade-up" style="animation-delay:0.2s">
+        <div class="club-icon">🔬</div>
+        <div class="club-name">Science Club</div>
+        <div class="club-years">2 years · Project Lead</div>
+        <ul class="club-bullets">
+          <li>Led smart irrigation science project</li>
+          <li>Top 20 Young Scientist Award</li>
+          <li>Organized 2 school science fairs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMPETITIONS -->
+<section id="competitions">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Recognition</div>
+      <h2 class="section-title">Competition Achievements</h2>
+      <p class="section-sub">Competing at national and international level since Grade 6.</p>
+    </div>
+    <div class="timeline fade-up">
+      <div class="tl-item">
+        <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+        <div class="tl-card">
+          <div>
+            <div class="tl-comp">International Abacus Olympiad</div>
+            <div class="tl-year">2024 · International Level</div>
+          </div>
+          <span class="medal gold">🥇 Gold Medal</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"><div class="tl-dot-inner" style="background:var(--accent2)"></div></div>
+        <div class="tl-card">
+          <div>
+            <div class="tl-comp">International Essay Writing Competition</div>
+            <div class="tl-year">2024 · International Level</div>
+          </div>
+          <span class="medal silver">🥈 Silver Medal</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"><div class="tl-dot-inner" style="background:var(--accent2)"></div></div>
+        <div class="tl-card">
+          <div>
+            <div class="tl-comp">Young Scientist Award</div>
+            <div class="tl-year">2023 · National Level</div>
+          </div>
+          <span class="medal finalist">⭐ Top 20 Finalist</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"><div class="tl-dot-inner" style="background:var(--accent3)"></div></div>
+        <div class="tl-card">
+          <div>
+            <div class="tl-comp">International Student Speaker Competition</div>
+            <div class="tl-year">2023 · International Level</div>
+          </div>
+          <span class="medal bronze">🥉 Bronze Medal</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"><div class="tl-dot-inner" style="background:var(--muted)"></div></div>
+        <div class="tl-card">
+          <div>
+            <div class="tl-comp">International Painting Olympics</div>
+            <div class="tl-year">2023 · International Level</div>
+          </div>
+          <span class="medal participation">🎨 Participation</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"><div class="tl-dot-inner" style="background:var(--gold)"></div></div>
+        <div class="tl-card">
+          <div>
+            <div class="tl-comp">School Innovation Award — Smart Irrigation</div>
+            <div class="tl-year">2024 · School Level</div>
+          </div>
+          <span class="medal gold">🏆 Winner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">What I've Built</div>
+      <h2 class="section-title">Project Showcase</h2>
+      <p class="section-sub">From science experiments to software — hands-on learning through building.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-up">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d2b0d,#1a4d1a)">💧</div>
+        <div class="project-body">
+          <div class="project-type">Science / IoT</div>
+          <div class="project-name">Smart Irrigation System</div>
+          <div class="project-desc">An automated plant-watering system using soil moisture sensors that triggers a pump when soil dryness is detected. Reduces water waste by 40%.</div>
+          <div class="project-tags">
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">Soil Sensor</span>
+            <span class="project-tag">IoT</span>
+          </div>
+          <div class="award-banner">🏆 School Innovation Award Winner</div>
+        </div>
+      </div>
+      <div class="project-card fade-up" style="animation-delay:0.1s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0d2e,#2d1457)">🏛</div>
+        <div class="project-body">
+          <div class="project-type">Game Development · Scratch</div>
+          <div class="project-name">Temple Adventure</div>
+          <div class="project-desc">A multi-level 2D adventure game designed in Scratch with increasing difficulty, a scoring system, animated characters, and custom background art.</div>
+          <div class="project-tags">
+            <span class="project-tag">Scratch</span>
+            <span class="project-tag">Game Design</span>
+            <span class="project-tag">Animation</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card fade-up" style="animation-delay:0.2s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1f2e,#1a3e57)">🌍</div>
+        <div class="project-body">
+          <div class="project-type">Web Development</div>
+          <div class="project-name">Climate Change Awareness Website</div>
+          <div class="project-desc">A fully responsive educational website built from scratch using HTML and CSS, covering climate causes, effects, and actionable steps with interactive infographics.</div>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CERTIFICATES -->
+<section id="certs">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Recognition</div>
+      <h2 class="section-title">Certificates & Awards</h2>
+      <p class="section-sub">A collection of credentials earned through hard work and dedication.</p>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card fade-up"><div class="cert-icon">🥇</div><div class="cert-name">Abacus Olympiad Gold</div><div class="cert-issuer">International · 2024</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">🥈</div><div class="cert-name">Essay Writing Silver</div><div class="cert-issuer">International · 2024</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">🥉</div><div class="cert-name">Speaker Competition Bronze</div><div class="cert-issuer">International · 2023</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">⭐</div><div class="cert-name">Young Scientist Top 20</div><div class="cert-issuer">National · 2023</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">🏆</div><div class="cert-name">School Innovation Award</div><div class="cert-issuer">School Level · 2024</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">📜</div><div class="cert-name">GEMMA Leadership Award</div><div class="cert-issuer">Club · 2023</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">🎖</div><div class="cert-name">Math Olympiad Finalist</div><div class="cert-issuer">State Level · 2022</div></div>
+      <div class="cert-card fade-up"><div class="cert-icon">🎨</div><div class="cert-name">Painting Olympics</div><div class="cert-issuer">Participation · 2023</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Competencies</div>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">A blend of academic, technical, and interpersonal abilities — continuously developing.</p>
+    </div>
+    <div class="skills-outer">
+      <div class="card fade-up">
+        <p class="skill-group-title">📐 Academic Skills</p>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Mental Math (Abacus)</span><span class="skill-pct">96%</span></div><div class="skill-track"><div class="skill-fill" data-w="96"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Logical Reasoning</span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-fill" data-w="92"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Problem Solving</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill" data-w="90"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Scientific Analysis</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-w="88"></div></div></div>
+      </div>
+      <div class="card fade-up" style="animation-delay:0.1s">
+        <p class="skill-group-title">💻 Technical Skills</p>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Scratch Programming</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-w="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">HTML & CSS</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-fill" data-w="75"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Canva / Design Tools</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" data-w="80"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">PowerPoint / Presentations</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill" data-w="90"></div></div></div>
+      </div>
+      <div class="card fade-up" style="animation-delay:0.2s">
+        <p class="skill-group-title">🤝 Soft Skills</p>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Leadership</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-w="88"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Public Speaking</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-w="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Teamwork & Collaboration</span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-fill" data-w="92"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span class="skill-name">Creativity & Innovation</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill" data-w="90"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">My Writing</div>
+      <h2 class="section-title">Student Blog</h2>
+      <p class="section-sub">Sharing what I learn, experience, and believe — one article at a time.</p>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card fade-up" onclick="openBlog(0)">
+        <span class="blog-tag" style="background:rgba(93,214,176,0.1);color:var(--accent2)">Mathematics</span>
+        <div class="blog-date">April 12, 2024</div>
+        <div class="blog-title">How Abacus Improved My Mental Math Skills</div>
+        <div class="blog-excerpt">When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds...</div>
+        <div class="blog-more">Read full article →</div>
+      </div>
+      <div class="blog-card fade-up" onclick="openBlog(1)" style="animation-delay:0.1s">
+        <span class="blog-tag" style="background:rgba(124,106,247,0.1);color:var(--accent)">Experience</span>
+        <div class="blog-date">February 3, 2024</div>
+        <div class="blog-title">My Experience at the International Student Speaker Competition</div>
+        <div class="blog-excerpt">Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady...</div>
+        <div class="blog-more">Read full article →</div>
+      </div>
+      <div class="blog-card fade-up" onclick="openBlog(2)" style="animation-delay:0.2s">
+        <span class="blog-tag" style="background:rgba(247,161,106,0.1);color:var(--accent3)">Technology</span>
+        <div class="blog-date">December 18, 2023</div>
+        <div class="blog-title">Why Coding is the Most Important Skill for Future Careers</div>
+        <div class="blog-excerpt">Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language of the future...</div>
+        <div class="blog-more">Read full article →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Modal -->
+<div class="blog-overlay" id="blogOverlay" onclick="closeBlog(event)">
+  <div class="blog-modal">
+    <button class="modal-close" onclick="closeBlogForce()">✕</button>
+    <div id="blogContent"></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">What Others Say</div>
+      <h2 class="section-title">Testimonials</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testi-text">Aarav consistently demonstrates curiosity, discipline, and leadership in every activity he participates in. His ability to grasp complex concepts quickly and then explain them to others sets him apart.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(124,106,247,0.15);color:var(--accent)">MS</div>
+          <div><div class="testi-name">Mrs. Meera Sharma</div><div class="testi-role">Mathematics Teacher</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up" style="animation-delay:0.1s">
+        <div class="testi-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testi-text">The GEMMA Clubs have significantly improved Aarav's confidence and problem-solving abilities. We've watched him grow from a shy child into a poised young leader who takes initiative.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(93,214,176,0.15);color:var(--accent2)">RS</div>
+          <div><div class="testi-name">Rajan Sharma</div><div class="testi-role">Parent</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up" style="animation-delay:0.2s">
+        <div class="testi-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testi-text">As his club mentor, watching Aarav go from participant to mentor himself has been remarkable. He brings fresh ideas and genuine enthusiasm that motivates everyone around him.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(247,161,106,0.15);color:var(--accent3)">PK</div>
+          <div><div class="testi-name">Mr. Prashant Kumar</div><div class="testi-role">GEMMA Club Coordinator</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-sub">Reach out for collaborations, competitions, or just to say hello!</p>
+    </div>
+    <div class="contact-grid fade-up">
+      <div class="contact-info">
+        <div class="contact-row">
+          <div class="contact-icon">📧</div>
+          <div><div class="contact-lbl">Email</div><div class="contact-val">aarav.sharma@example.com</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">🏫</div>
+          <div><div class="contact-lbl">School</div><div class="contact-val">Sunrise International School</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">📍</div>
+          <div><div class="contact-lbl">Location</div><div class="contact-val">Mumbai, Maharashtra, India</div></div>
+        </div>
+        <div>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Social Media</p>
+          <div class="social-row">
+            <span class="social-btn" title="LinkedIn">💼</span>
+            <span class="social-btn" title="Twitter">🐦</span>
+            <span class="social-btn" title="GitHub">💻</span>
+            <span class="social-btn" title="Instagram">📸</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p style="font-weight:700;margin-bottom:1rem;font-size:15px">Send a Message</p>
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name" id="cName"></div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" id="cEmail"></div>
+        <div class="form-group"><label>Subject</label><input type="text" placeholder="What's this about?" id="cSubject"></div>
+        <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Your message here..." id="cMsg"></textarea></div>
+        <button class="btn-primary" onclick="sendMsg()" style="width:100%">Send Message ✉</button>
+        <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Made with ❤ by <strong>Aarav Sharma</strong> · Grade 8 · Sunrise International School · <a href="mailto:aarav.sharma@example.com">aarav.sharma@example.com</a></p>
+  <p style="margin-top:6px;font-size:12px">GEMMA Club Portfolio · 2024 · Mumbai, India</p>
+</footer>
+
+<script>
+// THEME TOGGLE
+let isDark = true;
+function toggleTheme() {
+  isDark = !isDark;
+  document.body.classList.toggle('light', !isDark);
+  document.getElementById('themeBtn').textContent = isDark ? '☀ Light' : '🌙 Dark';
+}
+
+// MOBILE MENU
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+// COUNTER ANIMATION
+function animateCount(el, target, duration) {
+  let start = 0;
+  const step = (target / duration) * 16;
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { start = target; clearInterval(timer); }
+    el.textContent = Math.floor(start) + (el.dataset.suffix || '');
+  }, 16);
+}
+
+// SCROLL INTERSECTION
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // grade bars
+      entry.target.querySelectorAll('.grade-bar[data-w]').forEach(b => {
+        b.style.width = b.dataset.w + '%';
+      });
+      // skill fills
+      entry.target.querySelectorAll('.skill-fill[data-w]').forEach(b => {
+        b.style.width = b.dataset.w + '%';
+      });
+      // counters
+      entry.target.querySelectorAll('.stat-num[data-count]').forEach(el => {
+        animateCount(el, parseInt(el.dataset.count), 1200);
+      });
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// BLOG POSTS
+const blogPosts = [
+  {
+    tag: 'Mathematics', color: 'var(--accent2)',
+    date: 'April 12, 2024',
+    title: 'How Abacus Improved My Mental Math Skills',
+    content: `<p>When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds. The journey from beginner to State-level finalist taught me one thing above all else: the brain is trainable.</p>
+    <p>Abacus isn't just a counting tool — it's a mental framework. You learn to visualize beads on a mental board, which activates spatial and numerical reasoning simultaneously. Research shows that consistent abacus practice increases the brain's grey matter in areas responsible for numerical processing.</p>
+    <p>My biggest breakthrough came during the 2023 State Championship. I had been practicing 45 minutes daily for three months. When the problems appeared on screen, my hands moved instinctively — but more importantly, my mental image of the abacus was crystal clear. I finished 20 seconds before the next competitor.</p>
+    <p>If you want to improve your math speed, I recommend starting with simple abacus exercises: just 15 minutes a day, consistent, for 30 days. The compound effect is remarkable. Your brain genuinely rewires itself.</p>`
+  },
+  {
+    tag: 'Experience', color: 'var(--accent)',
+    date: 'February 3, 2024',
+    title: 'My Experience at the International Student Speaker Competition',
+    content: `<p>Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady.</p>
+    <p>The competition was held in Singapore. Each participant had 5 minutes to speak on a topic drawn randomly 30 minutes prior. My topic: "Technology is making us less human." I had to argue — and believe — one side within half an hour.</p>
+    <p>I chose to argue against the statement. My argument: technology, when used intentionally, amplifies our most human qualities — empathy, creativity, and connection. I referenced the use of social media in disaster relief, AI in medical diagnosis, and coding clubs that bring kids from different backgrounds together. Like ours.</p>
+    <p>I won the Bronze Medal. But more importantly, I left Singapore with four new friends from Korea, Brazil, and Kenya. We still talk. That's technology making us more human, not less.</p>
+    <p>To every student who thinks they can't speak publicly: you absolutely can. Join a club. Practice in front of a mirror. Start with two minutes. Grow from there. The stage is waiting for you.</p>`
+  },
+  {
+    tag: 'Technology', color: 'var(--accent3)',
+    date: 'December 18, 2023',
+    title: 'Why Coding is the Most Important Skill for Future Careers',
+    content: `<p>Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language the future is written in.</p>
+    <p>I started coding in Scratch, which might sound basic. But Scratch taught me the fundamentals of computational thinking: breaking a problem into smaller pieces, designing loops, handling conditions, debugging when things go wrong. These are cognitive skills that apply everywhere — from writing a persuasive essay to engineering a satellite.</p>
+    <p>When I built my Climate Change Awareness website in HTML and CSS, I wasn't just learning syntax. I was learning to communicate: how to structure information, choose typography, create visual hierarchy, and guide a reader through an argument. The skills of a developer overlap completely with the skills of a writer, designer, and analyst.</p>
+    <p>My advice to anyone starting out: don't wait until you're "ready." Open Scratch today. Build something ugly and broken. Fix it. Build something better. The only way to learn coding is by coding.</p>
+    <p>In ten years, the students who learned to code today will be the ones shaping the world everyone else lives in. I'd rather be a shaper than a bystander.</p>`
+  }
+];
+
+function openBlog(idx) {
+  const p = blogPosts[idx];
+  document.getElementById('blogContent').innerHTML = `
+    <span style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${p.color};background:rgba(124,106,247,0.1);padding:3px 10px;border-radius:50px;display:inline-block;margin-bottom:0.75rem">${p.tag}</span>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:0.5rem">${p.date}</p>
+    <h3>${p.title}</h3>
+    ${p.content}
+  `;
+  document.getElementById('blogOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeBlog(e) {
+  if (e.target === document.getElementById('blogOverlay')) closeBlogForce();
+}
+function closeBlogForce() {
+  document.getElementById('blogOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeBlogForce(); });
+
+// CONTACT FORM
+function sendMsg() {
+  const name = document.getElementById('cName').value.trim();
+  const email = document.getElementById('cEmail').value.trim();
+  if (!name || !email) { alert('Please fill in your name and email.'); return; }
+  document.getElementById('formSuccess').style.display = 'block';
+  ['cName','cEmail','cSubject','cMsg'].forEach(id => document.getElementById(id).value = '');
+  setTimeout(() => document.getElementById('formSuccess').style.display = 'none', 5000);
+}
+
+// DOWNLOAD RESUME (generates a simple text file)
+function downloadResume() {
+  const content = `AARAV RAJAN SHARMA
+Grade 8 | Sunrise International School | Mumbai, India
+Email: aarav.sharma@example.com
+
+CAREER GOAL
+Aerospace Engineer
+
+ACADEMIC PERFORMANCE (2023-24)
+Mathematics: A+ (98%)
+Computer Science: A+ (97%)
+Science: A (92%)
+Art & Design: A (91%)
+English: A (90%)
+Social Studies: B+ (85%)
+Overall: 92% — Distinction
+
+GEMMA CLUB PARTICIPATION
+- Abacus Club (2 years) — State-level finalist
+- Mathematics Club (2 years) — Club Secretary
+- Coding Club (1.5 years)
+- Public Speaking Club (1 year) — Vice President
+- Science Club (2 years) — Project Lead
+
+KEY ACHIEVEMENTS
+- Gold Medal — International Abacus Olympiad 2024
+- Silver Medal — International Essay Writing Competition 2024
+- Bronze Medal — International Student Speaker Competition 2023
+- Top 20 Finalist — Young Scientist Award 2023
+- Winner — School Innovation Award 2024
+
+PROJECTS
+1. Smart Irrigation System (Arduino + IoT)
+2. Temple Adventure — Scratch Game
+3. Climate Change Awareness Website (HTML/CSS)
+
+SKILLS
+Academic: Mental Math, Logical Reasoning, Problem Solving
+Technical: Scratch, HTML/CSS, Canva, PowerPoint
+Soft Skills: Leadership, Public Speaking, Teamwork, Creativity
+
+LANGUAGES: English, Hindi, Marathi
+`;
+  const blob = new Blob([content], { type: 'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'Aarav_Sharma_Resume.txt';
+  a.click();
+}
+</script>
+</body>
+</html>
