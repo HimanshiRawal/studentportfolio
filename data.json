@@ -1,282 +1,568 @@
 {
-  "meta": {
-    "pageTitle": "Aarav Sharma | Student Portfolio",
-    "badge": "GEMMA Club Student Portfolio"
-  },
-  "hero": {
-    "name": "Aarav",
-    "surname": "Sharma",
-    "grade": "Grade 8",
-    "school": "Sunrise International School",
-    "city": "Mumbai, India",
-    "photo": "image of boy.png",
-    "photoAlt": "Aarav Sharma",
-    "introduction": "I am passionate about <em>mathematics</em>, <em>coding</em>, <em>public speaking</em>, and <em>scientific innovation</em>. Through GEMMA Clubs, I continuously develop my skills and participate in national and international competitions.",
-    "photoTags": ["🧮 Abacus", "💻 Coding", "🔬 Science", "🎤 Speaker"],
-    "stats": [
-      { "count": 5, "label": "GEMMA Clubs" },
-      { "count": 6, "label": "Competitions" },
-      { "count": 92, "label": "% Score" }
-    ]
-  },
-  "about": {
-    "eyebrow": "Who I Am",
-    "title": "About Me",
-    "subtitle": "A curious, driven student who believes that learning never stops — inside or outside the classroom.",
-    "paragraphs": [
-      "Growing up with a deep fascination for numbers and technology, I have always sought challenges that push my thinking forward. Whether it's solving complex math problems, building a Scratch project, or presenting ideas on stage, I approach everything with enthusiasm and dedication.",
-      "My dream is to become an <strong>Aerospace Engineer</strong> — someone who contributes to humanity's journey beyond Earth. Every competition, project, and club activity brings me one step closer to that vision."
-    ],
-    "interests": [
-      "🧮 Mental Math", "💻 Coding", "🤖 Robotics",
-      "🎤 Public Speaking", "♟ Chess",
-      "🔬 Science Experiments", "🎨 Digital Design", "📖 Reading"
-    ],
-    "fields": [
-      { "icon": "👤", "label": "Full Name", "value": "Aarav Rajan Sharma" },
-      { "icon": "🎂", "label": "Date of Birth", "value": "14 March 2011" },
-      { "icon": "📚", "label": "Grade / Class", "value": "Grade 8 — Section A" },
-      { "icon": "🏫", "label": "School", "value": "Sunrise International School" },
-      { "icon": "📍", "label": "City / Country", "value": "Mumbai, India" },
-      { "icon": "🚀", "label": "Career Goal", "value": "Aerospace Engineer" },
-      { "icon": "🌐", "label": "Languages", "value": "English, Hindi, Marathi" }
-    ]
-  },
-  "academics": {
-    "eyebrow": "Grade 8 Results",
-    "title": "Academic Performance",
-    "subtitle": "Consistent excellence across all core subjects — with a special passion for STEM.",
-    "year": "Academic Year 2023–24",
-    "overallLabel": "Overall Result",
-    "overallTag": "Distinction",
-    "overallPct": "92%",
-    "subjects": [
-      { "emoji": "📐", "name": "Mathematics",      "grade": "A+", "gradeClass": "g-aplus", "score": 98 },
-      { "emoji": "🔬", "name": "Science",           "grade": "A",  "gradeClass": "g-a",    "score": 92 },
-      { "emoji": "📖", "name": "English",           "grade": "A",  "gradeClass": "g-a",    "score": 90 },
-      { "emoji": "💻", "name": "Computer Science",  "grade": "A+", "gradeClass": "g-aplus", "score": 97 },
-      { "emoji": "🌍", "name": "Social Studies",    "grade": "B+", "gradeClass": "g-bplus", "score": 85 },
-      { "emoji": "🎨", "name": "Art & Design",      "grade": "A",  "gradeClass": "g-a",    "score": 91 }
-    ]
-  },
-  "clubs": {
-    "eyebrow": "Extracurricular",
-    "title": "GEMMA Club Participation",
-    "subtitle": "Five clubs, endless learning — each one shaping a different dimension of who I am.",
-    "list": [
-      {
-        "icon": "🧮",
-        "name": "Abacus Club",
-        "years": "2 years · State-level finalist",
-        "bullets": ["Mastered 2-rod to 4-rod techniques", "Mentors junior students", "State-level finalist 2023"]
+  "students": [
+    {
+      "id": "aarav-sharma",
+      "meta": {
+        "pageTitle": "Aarav Sharma | Student Portfolio",
+        "badge": "GEMMA Club Student Portfolio"
       },
-      {
-        "icon": "📐",
-        "name": "Mathematics Club",
-        "years": "2 years · Club Secretary",
-        "bullets": ["Competed in 3 olympiads", "Led weekly problem-solving sessions", "Developed a math puzzle booklet"]
+      "student_info": {
+        "student_name": "Aarav Sharma",
+        "first_name": "Aarav",
+        "last_name": "Sharma",
+        "full_name": "Aarav Rajan Sharma",
+        "date_of_birth": "14 March 2011",
+        "grade": "Grade 8",
+        "section": "Section A",
+        "school_name": "Sunrise International School",
+        "city": "Mumbai",
+        "country": "India",
+        "languages": "English, Hindi, Marathi",
+        "career_goal": "Aerospace Engineer",
+        "participation_category": "GEMMA Club — STEM & Leadership",
+        "photo": "image of boy.png",
+        "photo_tags": ["🧮 Abacus", "💻 Coding", "🔬 Science", "🎤 Speaker"],
+        "introduction": "I am passionate about mathematics, coding, public speaking, and scientific innovation. Through GEMMA Clubs, I continuously develop my skills and participate in national and international competitions.",
+        "interests": ["🧮 Mental Math", "💻 Coding", "🤖 Robotics", "🎤 Public Speaking", "♟ Chess", "🔬 Science Experiments", "🎨 Digital Design", "📖 Reading"]
       },
-      {
-        "icon": "💻",
-        "name": "Coding Club",
-        "years": "1.5 years · Active member",
-        "bullets": ["Built 5 Scratch projects", "Learning HTML, CSS & Python basics", "Participated in 2 coding challenges"]
-      },
-      {
-        "icon": "🎤",
-        "name": "Public Speaking Club",
-        "years": "1 year · Vice President",
-        "bullets": ["Represented school at international event", "Coaches juniors in debate preparation", "Bronze at Intl. Speaker Competition"]
-      },
-      {
-        "icon": "🔬",
-        "name": "Science Club",
-        "years": "2 years · Project Lead",
-        "bullets": ["Led smart irrigation science project", "Top 20 Young Scientist Award", "Organized 2 school science fairs"]
-      }
-    ]
-  },
-  "competitions": {
-    "eyebrow": "Recognition",
-    "title": "Competition Achievements",
-    "subtitle": "Competing at national and international level since Grade 6.",
-    "list": [
-      { "name": "International Abacus Olympiad",               "year": "2024 · International Level", "medal": "🥇 Gold Medal",       "medalClass": "gold" },
-      { "name": "International Essay Writing Competition",      "year": "2024 · International Level", "medal": "🥈 Silver Medal",     "medalClass": "silver" },
-      { "name": "Young Scientist Award",                        "year": "2023 · National Level",      "medal": "⭐ Top 20 Finalist",  "medalClass": "finalist" },
-      { "name": "International Student Speaker Competition",    "year": "2023 · International Level", "medal": "🥉 Bronze Medal",     "medalClass": "bronze" },
-      { "name": "International Painting Olympics",             "year": "2023 · International Level", "medal": "🎨 Participation",    "medalClass": "participation" },
-      { "name": "School Innovation Award — Smart Irrigation",  "year": "2024 · School Level",        "medal": "🏆 Winner",           "medalClass": "gold" }
-    ]
-  },
-  "projects": {
-    "eyebrow": "What I've Built",
-    "title": "Project Showcase",
-    "subtitle": "From science experiments to software — hands-on learning through building.",
-    "list": [
-      {
-        "thumbEmoji": "💧",
-        "thumbBg": "linear-gradient(135deg,#0d2b0d,#1a4d1a)",
-        "type": "Science / IoT",
-        "name": "Smart Irrigation System",
-        "desc": "An automated plant-watering system using soil moisture sensors that triggers a pump when soil dryness is detected. Reduces water waste by 40%.",
-        "tags": ["Arduino", "Soil Sensor", "IoT"],
-        "award": "🏆 School Innovation Award Winner"
-      },
-      {
-        "thumbEmoji": "🏛",
-        "thumbBg": "linear-gradient(135deg,#1a0d2e,#2d1457)",
-        "type": "Game Development · Scratch",
-        "name": "Temple Adventure",
-        "desc": "A multi-level 2D adventure game designed in Scratch with increasing difficulty, a scoring system, animated characters, and custom background art.",
-        "tags": ["Scratch", "Game Design", "Animation"],
-        "award": null
-      },
-      {
-        "thumbEmoji": "🌍",
-        "thumbBg": "linear-gradient(135deg,#0d1f2e,#1a3e57)",
-        "type": "Web Development",
-        "name": "Climate Change Awareness Website",
-        "desc": "A fully responsive educational website built from scratch using HTML and CSS, covering climate causes, effects, and actionable steps with interactive infographics.",
-        "tags": ["HTML", "CSS", "Responsive"],
-        "award": null
-      }
-    ]
-  },
-  "certificates": {
-    "eyebrow": "Recognition",
-    "title": "Certificates & Awards",
-    "subtitle": "A collection of credentials earned through hard work and dedication.",
-    "list": [
-      { "icon": "🥇", "name": "Abacus Olympiad Gold",      "issuer": "International · 2024" },
-      { "icon": "🥈", "name": "Essay Writing Silver",       "issuer": "International · 2024" },
-      { "icon": "🥉", "name": "Speaker Competition Bronze", "issuer": "International · 2023" },
-      { "icon": "⭐", "name": "Young Scientist Top 20",     "issuer": "National · 2023" },
-      { "icon": "🏆", "name": "School Innovation Award",    "issuer": "School Level · 2024" },
-      { "icon": "📜", "name": "GEMMA Leadership Award",     "issuer": "Club · 2023" },
-      { "icon": "🎖", "name": "Math Olympiad Finalist",     "issuer": "State Level · 2022" },
-      { "icon": "🎨", "name": "Painting Olympics",          "issuer": "Participation · 2023" }
-    ]
-  },
-  "skills": {
-    "eyebrow": "Competencies",
-    "title": "Skills",
-    "subtitle": "A blend of academic, technical, and interpersonal abilities — continuously developing.",
-    "groups": [
-      {
-        "title": "📐 Academic Skills",
-        "items": [
-          { "name": "Mental Math (Abacus)", "pct": 96 },
-          { "name": "Logical Reasoning",   "pct": 92 },
-          { "name": "Problem Solving",     "pct": 90 },
-          { "name": "Scientific Analysis", "pct": 88 }
+      "contact_info": {
+        "email": "aarav.sharma@example.com",
+        "address": "Andheri West, Mumbai, Maharashtra 400053, India",
+        "parent_name": "Rajan Sharma",
+        "parent_phone": "+91 98765 43210",
+        "parent_email": "rajan.sharma@example.com",
+        "principal_name": "Dr. Sunita Mehta",
+        "principal_contact": "principal@sunriseinternational.edu.in",
+        "school_incharge": "Mr. Prashant Kumar",
+        "school_incharge_contact": "coordinator@sunriseinternational.edu.in",
+        "socials": [
+          { "icon": "💼", "title": "LinkedIn", "url": "#" },
+          { "icon": "🐦", "title": "Twitter", "url": "#" },
+          { "icon": "💻", "title": "GitHub", "url": "#" },
+          { "icon": "📸", "title": "Instagram", "url": "#" }
         ]
       },
-      {
-        "title": "💻 Technical Skills",
-        "items": [
-          { "name": "Scratch Programming",      "pct": 85 },
-          { "name": "HTML & CSS",               "pct": 75 },
-          { "name": "Canva / Design Tools",     "pct": 80 },
-          { "name": "PowerPoint / Presentations","pct": 90 }
+      "verification_docs": {
+        "upload_letter": "",
+        "upload_pay_receipt": "",
+        "upload_school_id": ""
+      },
+      "statistical_data": {
+        "clubs_count": 5,
+        "competitions_count": 6,
+        "overall_score": 92
+      },
+      "education": {
+        "eyebrow": "Grade 8 Results",
+        "year": "Academic Year 2023–24",
+        "overall_pct": "92%",
+        "overall_tag": "Distinction",
+        "subjects": [
+          { "emoji": "📐", "name": "Mathematics",     "grade": "A+", "gradeClass": "g-aplus", "score": 98 },
+          { "emoji": "🔬", "name": "Science",          "grade": "A",  "gradeClass": "g-a",    "score": 92 },
+          { "emoji": "📖", "name": "English",          "grade": "A",  "gradeClass": "g-a",    "score": 90 },
+          { "emoji": "💻", "name": "Computer Science", "grade": "A+", "gradeClass": "g-aplus","score": 97 },
+          { "emoji": "🌍", "name": "Social Studies",   "grade": "B+", "gradeClass": "g-bplus","score": 85 },
+          { "emoji": "🎨", "name": "Art & Design",     "grade": "A",  "gradeClass": "g-a",    "score": 91 }
         ]
       },
-      {
-        "title": "🤝 Soft Skills",
-        "items": [
-          { "name": "Leadership",              "pct": 88 },
-          { "name": "Public Speaking",         "pct": 85 },
-          { "name": "Teamwork & Collaboration","pct": 92 },
-          { "name": "Creativity & Innovation", "pct": 90 }
+      "experience": {
+        "clubs": [
+          { "icon": "🧮", "name": "Abacus Club",         "years": "2 years · State-level finalist", "bullets": ["Mastered 2-rod to 4-rod techniques", "Mentors junior students", "State-level finalist 2023"] },
+          { "icon": "📐", "name": "Mathematics Club",    "years": "2 years · Club Secretary",       "bullets": ["Competed in 3 olympiads", "Led weekly problem-solving sessions", "Developed a math puzzle booklet"] },
+          { "icon": "💻", "name": "Coding Club",         "years": "1.5 years · Active member",      "bullets": ["Built 5 Scratch projects", "Learning HTML, CSS & Python basics", "Participated in 2 coding challenges"] },
+          { "icon": "🎤", "name": "Public Speaking Club","years": "1 year · Vice President",         "bullets": ["Represented school at international event", "Coaches juniors in debate preparation", "Bronze at Intl. Speaker Competition"] },
+          { "icon": "🔬", "name": "Science Club",        "years": "2 years · Project Lead",          "bullets": ["Led smart irrigation science project", "Top 20 Young Scientist Award", "Organized 2 school science fairs"] }
+        ],
+        "competitions": [
+          { "name": "International Abacus Olympiad",            "year": "2024 · International Level", "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "International Essay Writing Competition",   "year": "2024 · International Level", "medal": "🥈 Silver Medal",    "medalClass": "silver" },
+          { "name": "Young Scientist Award",                     "year": "2023 · National Level",      "medal": "⭐ Top 20 Finalist", "medalClass": "finalist" },
+          { "name": "International Student Speaker Competition", "year": "2023 · International Level", "medal": "🥉 Bronze Medal",    "medalClass": "bronze" },
+          { "name": "International Painting Olympics",           "year": "2023 · International Level", "medal": "🎨 Participation",   "medalClass": "participation" },
+          { "name": "School Innovation Award — Smart Irrigation","year": "2024 · School Level",        "medal": "🏆 Winner",          "medalClass": "gold" }
+        ],
+        "projects": [
+          { "thumbEmoji": "💧", "thumbBg": "linear-gradient(135deg,#0d2b0d,#1a4d1a)", "type": "Science / IoT",          "name": "Smart Irrigation System",         "desc": "An automated plant-watering system using soil moisture sensors that triggers a pump when soil dryness is detected. Reduces water waste by 40%.", "tags": ["Arduino","Soil Sensor","IoT"],         "award": "🏆 School Innovation Award Winner" },
+          { "thumbEmoji": "🏛", "thumbBg": "linear-gradient(135deg,#1a0d2e,#2d1457)", "type": "Game Development · Scratch", "name": "Temple Adventure",               "desc": "A multi-level 2D adventure game designed in Scratch with increasing difficulty, a scoring system, animated characters, and custom background art.", "tags": ["Scratch","Game Design","Animation"],   "award": null },
+          { "thumbEmoji": "🌍", "thumbBg": "linear-gradient(135deg,#0d1f2e,#1a3e57)", "type": "Web Development",         "name": "Climate Change Awareness Website","desc": "A fully responsive educational website built from scratch using HTML and CSS, covering climate causes, effects, and actionable steps with interactive infographics.", "tags": ["HTML","CSS","Responsive"], "award": null }
+        ],
+        "skills": [
+          { "title": "📐 Academic Skills",  "items": [{"name":"Mental Math (Abacus)","pct":96},{"name":"Logical Reasoning","pct":92},{"name":"Problem Solving","pct":90},{"name":"Scientific Analysis","pct":88}] },
+          { "title": "💻 Technical Skills", "items": [{"name":"Scratch Programming","pct":85},{"name":"HTML & CSS","pct":75},{"name":"Canva / Design Tools","pct":80},{"name":"PowerPoint / Presentations","pct":90}] },
+          { "title": "🤝 Soft Skills",      "items": [{"name":"Leadership","pct":88},{"name":"Public Speaking","pct":85},{"name":"Teamwork & Collaboration","pct":92},{"name":"Creativity & Innovation","pct":90}] }
         ]
-      }
-    ]
-  },
-  "blog": {
-    "eyebrow": "My Writing",
-    "title": "Student Blog",
-    "subtitle": "Sharing what I learn, experience, and believe — one article at a time.",
-    "posts": [
-      {
-        "tag": "Mathematics",
-        "tagColor": "var(--accent2)",
-        "tagBg": "rgba(93,214,176,0.1)",
-        "date": "April 12, 2024",
-        "title": "How Abacus Improved My Mental Math Skills",
-        "excerpt": "When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds...",
-        "content": "<p>When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds. The journey from beginner to State-level finalist taught me one thing above all else: the brain is trainable.</p><p>Abacus isn't just a counting tool — it's a mental framework. You learn to visualize beads on a mental board, which activates spatial and numerical reasoning simultaneously. Research shows that consistent abacus practice increases the brain's grey matter in areas responsible for numerical processing.</p><p>My biggest breakthrough came during the 2023 State Championship. I had been practicing 45 minutes daily for three months. When the problems appeared on screen, my hands moved instinctively — but more importantly, my mental image of the abacus was crystal clear. I finished 20 seconds before the next competitor.</p><p>If you want to improve your math speed, I recommend starting with simple abacus exercises: just 15 minutes a day, consistent, for 30 days. The compound effect is remarkable. Your brain genuinely rewires itself.</p>"
       },
-      {
-        "tag": "Experience",
-        "tagColor": "var(--accent)",
-        "tagBg": "rgba(124,106,247,0.1)",
-        "date": "February 3, 2024",
-        "title": "My Experience at the International Student Speaker Competition",
-        "excerpt": "Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady...",
-        "content": "<p>Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady.</p><p>The competition was held in Singapore. Each participant had 5 minutes to speak on a topic drawn randomly 30 minutes prior. My topic: \"Technology is making us less human.\" I had to argue — and believe — one side within half an hour.</p><p>I chose to argue against the statement. My argument: technology, when used intentionally, amplifies our most human qualities — empathy, creativity, and connection. I referenced the use of social media in disaster relief, AI in medical diagnosis, and coding clubs that bring kids from different backgrounds together. Like ours.</p><p>I won the Bronze Medal. But more importantly, I left Singapore with four new friends from Korea, Brazil, and Kenya. We still talk. That's technology making us more human, not less.</p><p>To every student who thinks they can't speak publicly: you absolutely can. Join a club. Practice in front of a mirror. Start with two minutes. Grow from there. The stage is waiting for you.</p>"
+      "certificates": [
+        { "icon": "🥇", "name": "Abacus Olympiad Gold",       "issuer": "International · 2024", "certificate_type": "Gold Medal",    "issue_date": "2024-03-15" },
+        { "icon": "🥈", "name": "Essay Writing Silver",        "issuer": "International · 2024", "certificate_type": "Silver Medal",  "issue_date": "2024-05-20" },
+        { "icon": "🥉", "name": "Speaker Competition Bronze",  "issuer": "International · 2023", "certificate_type": "Bronze Medal",  "issue_date": "2023-11-10" },
+        { "icon": "⭐", "name": "Young Scientist Top 20",      "issuer": "National · 2023",      "certificate_type": "Finalist",      "issue_date": "2023-08-05" },
+        { "icon": "🏆", "name": "School Innovation Award",     "issuer": "School Level · 2024",  "certificate_type": "Winner",        "issue_date": "2024-01-22" },
+        { "icon": "📜", "name": "GEMMA Leadership Award",      "issuer": "Club · 2023",          "certificate_type": "Leadership",    "issue_date": "2023-12-01" },
+        { "icon": "🎖", "name": "Math Olympiad Finalist",      "issuer": "State Level · 2022",   "certificate_type": "Finalist",      "issue_date": "2022-09-18" },
+        { "icon": "🎨", "name": "Painting Olympics",           "issuer": "Participation · 2023", "certificate_type": "Participation", "issue_date": "2023-07-30" }
+      ],
+      "blog": [
+        { "tag": "Mathematics", "tagColor": "#5dd6b0", "tagBg": "rgba(93,214,176,0.1)", "date": "April 12, 2024", "title": "How Abacus Improved My Mental Math Skills", "excerpt": "When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds...", "content": "<p>When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds. The journey from beginner to State-level finalist taught me one thing above all else: the brain is trainable.</p><p>Abacus isn't just a counting tool — it's a mental framework. You learn to visualize beads on a mental board, which activates spatial and numerical reasoning simultaneously.</p><p>My biggest breakthrough came during the 2023 State Championship. I had been practicing 45 minutes daily for three months. I finished 20 seconds before the next competitor.</p>" },
+        { "tag": "Experience",  "tagColor": "#7c6af7", "tagBg": "rgba(124,106,247,0.1)", "date": "February 3, 2024", "title": "My Experience at the International Student Speaker Competition", "excerpt": "Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me...", "content": "<p>Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady.</p><p>The competition was held in Singapore. My topic: \"Technology is making us less human.\" I argued against — technology amplifies our most human qualities.</p><p>I won the Bronze Medal and left Singapore with four new friends from Korea, Brazil, and Kenya. That's technology making us more human, not less.</p>" },
+        { "tag": "Technology",  "tagColor": "#f7a16a", "tagBg": "rgba(247,161,106,0.1)", "date": "December 18, 2023", "title": "Why Coding is the Most Important Skill for Future Careers", "excerpt": "Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer...", "content": "<p>Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language the future is written in.</p><p>I started coding in Scratch, which taught me the fundamentals of computational thinking. When I built my Climate Change Awareness website, I wasn't just learning syntax — I was learning to communicate.</p><p>My advice: don't wait until you're ready. Open Scratch today. Build something ugly and broken. Fix it. The only way to learn coding is by coding.</p>" }
+      ],
+      "testimonials": [
+        { "text": "Aarav consistently demonstrates curiosity, discipline, and leadership in every activity he participates in. His ability to grasp complex concepts quickly and then explain them to others sets him apart.", "name": "Mrs. Meera Sharma",  "role": "Mathematics Teacher",      "initials": "MS", "avatarBg": "rgba(124,106,247,0.15)", "avatarColor": "#7c6af7" },
+        { "text": "The GEMMA Clubs have significantly improved Aarav's confidence and problem-solving abilities. We've watched him grow from a shy child into a poised young leader who takes initiative.",             "name": "Rajan Sharma",        "role": "Parent",                   "initials": "RS", "avatarBg": "rgba(93,214,176,0.15)",  "avatarColor": "#5dd6b0" },
+        { "text": "As his club mentor, watching Aarav go from participant to mentor himself has been remarkable. He brings fresh ideas and genuine enthusiasm that motivates everyone around him.",                    "name": "Mr. Prashant Kumar", "role": "GEMMA Club Coordinator",   "initials": "PK", "avatarBg": "rgba(247,161,106,0.15)", "avatarColor": "#f7a16a" }
+      ]
+    },
+    {
+      "id": "priya-verma",
+      "meta": {
+        "pageTitle": "Priya Verma | Student Portfolio",
+        "badge": "GEMMA Club Student Portfolio"
       },
-      {
-        "tag": "Technology",
-        "tagColor": "var(--accent3)",
-        "tagBg": "rgba(247,161,106,0.1)",
-        "date": "December 18, 2023",
-        "title": "Why Coding is the Most Important Skill for Future Careers",
-        "excerpt": "Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language of the future...",
-        "content": "<p>Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language the future is written in.</p><p>I started coding in Scratch, which might sound basic. But Scratch taught me the fundamentals of computational thinking: breaking a problem into smaller pieces, designing loops, handling conditions, debugging when things go wrong. These are cognitive skills that apply everywhere — from writing a persuasive essay to engineering a satellite.</p><p>When I built my Climate Change Awareness website in HTML and CSS, I wasn't just learning syntax. I was learning to communicate: how to structure information, choose typography, create visual hierarchy, and guide a reader through an argument. The skills of a developer overlap completely with the skills of a writer, designer, and analyst.</p><p>My advice to anyone starting out: don't wait until you're \"ready.\" Open Scratch today. Build something ugly and broken. Fix it. Build something better. The only way to learn coding is by coding.</p><p>In ten years, the students who learned to code today will be the ones shaping the world everyone else lives in. I'd rather be a shaper than a bystander.</p>"
-      }
-    ]
-  },
-  "testimonials": {
-    "eyebrow": "What Others Say",
-    "title": "Testimonials",
-    "list": [
-      {
-        "text": "Aarav consistently demonstrates curiosity, discipline, and leadership in every activity he participates in. His ability to grasp complex concepts quickly and then explain them to others sets him apart.",
-        "name": "Mrs. Meera Sharma",
-        "role": "Mathematics Teacher",
-        "initials": "MS",
-        "avatarBg": "rgba(124,106,247,0.15)",
-        "avatarColor": "var(--accent)"
+      "student_info": {
+        "student_name": "Priya Verma",
+        "first_name": "Priya",
+        "last_name": "Verma",
+        "full_name": "Priya Anjali Verma",
+        "date_of_birth": "22 July 2010",
+        "grade": "Grade 9",
+        "section": "Section B",
+        "school_name": "Delhi Public School",
+        "city": "New Delhi",
+        "country": "India",
+        "languages": "English, Hindi",
+        "career_goal": "Data Scientist",
+        "participation_category": "GEMMA Club — Arts & Technology",
+        "photo": "image.png",
+        "photo_tags": ["🎨 Art", "💻 Coding", "📊 Data", "🎤 Speaker"],
+        "introduction": "I love combining creativity with technology. From designing digital art to analysing data, I believe every problem has a beautiful solution waiting to be discovered.",
+        "interests": ["🎨 Digital Art", "💻 Coding", "📊 Data Analysis", "🎤 Public Speaking", "📖 Reading", "🔬 Science", "🎵 Music", "♟ Chess"]
       },
-      {
-        "text": "The GEMMA Clubs have significantly improved Aarav's confidence and problem-solving abilities. We've watched him grow from a shy child into a poised young leader who takes initiative.",
-        "name": "Rajan Sharma",
-        "role": "Parent",
-        "initials": "RS",
-        "avatarBg": "rgba(93,214,176,0.15)",
-        "avatarColor": "var(--accent2)"
+      "contact_info": {
+        "email": "priya.verma@example.com",
+        "address": "Vasant Kunj, New Delhi, Delhi 110070, India",
+        "parent_name": "Anjali Verma",
+        "parent_phone": "+91 99887 76655",
+        "parent_email": "anjali.verma@example.com",
+        "principal_name": "Mr. Rajesh Khanna",
+        "principal_contact": "principal@dpsnewdelhi.edu.in",
+        "school_incharge": "Ms. Kavita Singh",
+        "school_incharge_contact": "coordinator@dpsnewdelhi.edu.in",
+        "socials": [
+          { "icon": "💼", "title": "LinkedIn",  "url": "#" },
+          { "icon": "💻", "title": "GitHub",    "url": "#" },
+          { "icon": "📸", "title": "Instagram", "url": "#" }
+        ]
       },
-      {
-        "text": "As his club mentor, watching Aarav go from participant to mentor himself has been remarkable. He brings fresh ideas and genuine enthusiasm that motivates everyone around him.",
-        "name": "Mr. Prashant Kumar",
-        "role": "GEMMA Club Coordinator",
-        "initials": "PK",
-        "avatarBg": "rgba(247,161,106,0.15)",
-        "avatarColor": "var(--accent3)"
-      }
-    ]
-  },
-  "contact": {
-    "eyebrow": "Get In Touch",
-    "title": "Contact Me",
-    "subtitle": "Reach out for collaborations, competitions, or just to say hello!",
-    "email": "aarav.sharma@example.com",
-    "school": "Sunrise International School",
-    "location": "Mumbai, Maharashtra, India",
-    "socials": [
-      { "icon": "💼", "title": "LinkedIn" },
-      { "icon": "🐦", "title": "Twitter" },
-      { "icon": "💻", "title": "GitHub" },
-      { "icon": "📸", "title": "Instagram" }
-    ]
-  },
-  "footer": {
-    "name": "Aarav Sharma",
-    "grade": "Grade 8",
-    "school": "Sunrise International School",
-    "email": "aarav.sharma@example.com",
-    "year": "2024",
-    "city": "Mumbai, India",
-    "club": "GEMMA Club Portfolio"
-  }
+      "verification_docs": {
+        "upload_letter": "",
+        "upload_pay_receipt": "",
+        "upload_school_id": ""
+      },
+      "statistical_data": {
+        "clubs_count": 4,
+        "competitions_count": 5,
+        "overall_score": 94
+      },
+      "education": {
+        "eyebrow": "Grade 9 Results",
+        "year": "Academic Year 2023–24",
+        "overall_pct": "94%",
+        "overall_tag": "Distinction",
+        "subjects": [
+          { "emoji": "📐", "name": "Mathematics",     "grade": "A+", "gradeClass": "g-aplus", "score": 96 },
+          { "emoji": "💻", "name": "Computer Science","grade": "A+", "gradeClass": "g-aplus", "score": 98 },
+          { "emoji": "🔬", "name": "Science",          "grade": "A",  "gradeClass": "g-a",    "score": 93 },
+          { "emoji": "📖", "name": "English",          "grade": "A",  "gradeClass": "g-a",    "score": 91 },
+          { "emoji": "🌍", "name": "Social Studies",   "grade": "A",  "gradeClass": "g-a",    "score": 90 },
+          { "emoji": "🎨", "name": "Art & Design",     "grade": "A+", "gradeClass": "g-aplus", "score": 97 }
+        ]
+      },
+      "experience": {
+        "clubs": [
+          { "icon": "🎨", "name": "Digital Art Club",  "years": "2 years · Club President",  "bullets": ["Created 20+ digital artworks", "Led school exhibition 2024", "Mentors 10 junior students"] },
+          { "icon": "💻", "name": "Coding Club",        "years": "2 years · Active member",   "bullets": ["Built data dashboard in Python", "Completed 3 web projects", "Won internal hackathon 2023"] },
+          { "icon": "📊", "name": "Data Science Club",  "years": "1 year · Secretary",        "bullets": ["Analysed school survey data", "Presented findings to faculty", "Built visualisation using Excel"] },
+          { "icon": "🎤", "name": "Debate Club",        "years": "1.5 years · Active member", "bullets": ["Won 2 inter-school debates", "Represented school at zonal level", "Mentors junior debaters"] }
+        ],
+        "competitions": [
+          { "name": "National Data Science Olympiad",      "year": "2024 · National Level",      "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "International Digital Art Competition","year": "2023 · International Level", "medal": "🥈 Silver Medal",    "medalClass": "silver" },
+          { "name": "Inter-School Debate Championship",    "year": "2024 · City Level",          "medal": "🏆 Winner",          "medalClass": "gold" },
+          { "name": "Young Innovator Award",               "year": "2023 · National Level",      "medal": "⭐ Top 10 Finalist", "medalClass": "finalist" },
+          { "name": "Science Quiz Competition",            "year": "2023 · State Level",         "medal": "🥉 Bronze Medal",    "medalClass": "bronze" }
+        ],
+        "projects": [
+          { "thumbEmoji": "📊", "thumbBg": "linear-gradient(135deg,#0d1a2e,#1a3357)", "type": "Data Science",     "name": "School Survey Dashboard",  "desc": "An interactive data dashboard built using Python and Excel to visualise results from a school-wide student well-being survey.", "tags": ["Python","Excel","Data Viz"], "award": null },
+          { "thumbEmoji": "🎨", "thumbBg": "linear-gradient(135deg,#2e0d1a,#571a33)", "type": "Digital Art",      "name": "Nature in Pixels",          "desc": "A digital art series of 12 pieces exploring endangered species using Procreate and Canva. Exhibited at school annual art show.", "tags": ["Procreate","Canva","Design"], "award": "🏆 Best Art Project — School Exhibition 2024" },
+          { "thumbEmoji": "💻", "thumbBg": "linear-gradient(135deg,#0d2e1a,#1a5733)", "type": "Web Development", "name": "Eco-Tracker Website",       "desc": "A personal carbon footprint tracker website built with HTML, CSS, and JavaScript that calculates daily emissions and suggests improvements.", "tags": ["HTML","CSS","JavaScript"],  "award": null }
+        ],
+        "skills": [
+          { "title": "📐 Academic Skills",  "items": [{"name":"Data Analysis","pct":92},{"name":"Logical Reasoning","pct":90},{"name":"Problem Solving","pct":94},{"name":"Research & Writing","pct":88}] },
+          { "title": "💻 Technical Skills", "items": [{"name":"Python (Basics)","pct":80},{"name":"HTML & CSS","pct":85},{"name":"Canva / Procreate","pct":95},{"name":"Excel & Data Viz","pct":88}] },
+          { "title": "🤝 Soft Skills",      "items": [{"name":"Creativity","pct":96},{"name":"Public Speaking","pct":88},{"name":"Teamwork","pct":91},{"name":"Leadership","pct":85}] }
+        ]
+      },
+      "certificates": [
+        { "icon": "🥇", "name": "Data Science Olympiad Gold",  "issuer": "National · 2024",      "certificate_type": "Gold Medal",  "issue_date": "2024-02-10" },
+        { "icon": "🥈", "name": "Digital Art Silver",          "issuer": "International · 2023", "certificate_type": "Silver Medal","issue_date": "2023-10-05" },
+        { "icon": "🏆", "name": "Debate Championship Winner",  "issuer": "City Level · 2024",    "certificate_type": "Winner",      "issue_date": "2024-04-18" },
+        { "icon": "⭐", "name": "Young Innovator Top 10",      "issuer": "National · 2023",      "certificate_type": "Finalist",    "issue_date": "2023-09-22" },
+        { "icon": "🥉", "name": "Science Quiz Bronze",         "issuer": "State Level · 2023",   "certificate_type": "Bronze Medal","issue_date": "2023-06-14" },
+        { "icon": "🎨", "name": "Best Art Project Award",      "issuer": "School · 2024",        "certificate_type": "Winner",      "issue_date": "2024-01-30" }
+      ],
+      "blog": [
+        { "tag": "Technology",  "tagColor": "#7c6af7", "tagBg": "rgba(124,106,247,0.1)", "date": "March 5, 2024",    "title": "How I Fell in Love with Data Science", "excerpt": "Numbers used to feel cold and abstract. Then I started seeing them as stories waiting to be told...", "content": "<p>Numbers used to feel cold and abstract. Then I started seeing them as stories waiting to be told — about students, schools, and systems. That shift changed everything for me.</p><p>In our Data Science Club, I ran an analysis of a school well-being survey with 300 responses. Turning rows of data into a colour-coded dashboard that teachers actually read gave me a feeling no art project ever had: the feeling that data, when presented right, changes decisions.</p><p>If you think data science is only for maths geniuses, think again. It's for anyone who is curious about why things are the way they are.</p>" },
+        { "tag": "Art",         "tagColor": "#5dd6b0", "tagBg": "rgba(93,214,176,0.1)",  "date": "November 12, 2023","title": "Why Digital Art is the Future of Creativity", "excerpt": "When I first opened Procreate, I thought it was just a fancy drawing app. I had no idea it would become my primary way of thinking...", "content": "<p>When I first opened Procreate, I thought it was just a fancy drawing app. I had no idea it would become my primary way of thinking. Digital art is not a replacement for traditional art — it's an extension of it.</p><p>My Nature in Pixels series took three months. Each piece was researched: habitat, threats, and conservation status. The art became a form of science communication. Teachers used my pieces in biology class.</p><p>Art and technology are not opposites. The best creators of the next decade will be fluent in both.</p>" },
+        { "tag": "Experience",  "tagColor": "#f7a16a", "tagBg": "rgba(247,161,106,0.1)", "date": "January 20, 2024", "title": "What Winning a Debate Taught Me About Listening", "excerpt": "I used to think winning a debate was about talking. I was wrong. The best debaters I faced were extraordinary listeners...", "content": "<p>I used to think winning a debate was about talking. I was wrong. The best debaters I faced were extraordinary listeners who responded to what was actually said, not what they expected to hear.</p><p>At the Inter-School Debate Championship, I faced a team that had clearly prepared more facts than me. But I listened carefully, found a gap in their reasoning, and pivoted my argument around it. We won.</p><p>Debate taught me that every conversation is a collaboration, even a competitive one. That lesson applies everywhere — in teamwork, in data analysis, and in life.</p>" }
+      ],
+      "testimonials": [
+        { "text": "Priya is one of the most creatively gifted and analytically sharp students I have taught. She bridges art and science in a way that is rare and genuinely inspiring.",              "name": "Ms. Kavita Singh",  "role": "Computer Science Teacher", "initials": "KS", "avatarBg": "rgba(124,106,247,0.15)", "avatarColor": "#7c6af7" },
+        { "text": "Watching Priya grow through GEMMA Clubs has been wonderful. She takes every challenge seriously and always finds a way to make her work meaningful to others.",                 "name": "Anjali Verma",      "role": "Parent",                   "initials": "AV", "avatarBg": "rgba(93,214,176,0.15)",  "avatarColor": "#5dd6b0" },
+        { "text": "Priya led our Digital Art Club with vision and empathy. She made every member feel their work mattered — and then proved it by showcasing all of them at the exhibition.",   "name": "Mr. Arjun Das",     "role": "GEMMA Club Coordinator",   "initials": "AD", "avatarBg": "rgba(247,161,106,0.15)", "avatarColor": "#f7a16a" }
+      ]
+    },
+
+    {
+      "id": "rohan-mehta",
+      "meta": { "pageTitle": "Rohan Mehta | Student Portfolio", "badge": "GEMMA Club Student Portfolio" },
+      "student_info": {
+        "student_name": "Rohan Mehta", "first_name": "Rohan", "last_name": "Mehta", "full_name": "Rohan Vikram Mehta",
+        "date_of_birth": "05 September 2010", "grade": "Grade 9", "section": "Section C",
+        "school_name": "Navrachna International School", "city": "Vadodara", "country": "India",
+        "languages": "English, Hindi, Gujarati", "career_goal": "Robotics Engineer",
+        "participation_category": "GEMMA Club — Robotics & Innovation",
+        "photo": "boyimage1.webp", "photo_tags": ["🤖 Robotics", "⚽ Football", "🔧 Engineering", "🎵 Music"],
+        "introduction": "I build things that move. From LEGO Mindstorms to Arduino robots, I find joy in making machines come alive. Football keeps me grounded; music keeps me creative.",
+        "interests": ["🤖 Robotics", "⚽ Football", "🔧 Mechanical Engineering", "🎵 Guitar", "💻 Coding", "🔬 Physics", "♟ Strategy Games", "📐 Mathematics"]
+      },
+      "contact_info": {
+        "email": "rohan.mehta@example.com",
+        "address": "Alkapuri, Vadodara, Gujarat 390007, India",
+        "parent_name": "Vikram Mehta", "parent_phone": "+91 94270 55566", "parent_email": "vikram.mehta@example.com",
+        "principal_name": "Ms. Nandita Shah", "principal_contact": "principal@navrachna.edu.in",
+        "school_incharge": "Mr. Deepak Joshi", "school_incharge_contact": "coordinator@navrachna.edu.in",
+        "socials": [
+          { "icon": "💼", "title": "LinkedIn", "url": "#" },
+          { "icon": "💻", "title": "GitHub", "url": "#" },
+          { "icon": "📸", "title": "Instagram", "url": "#" }
+        ]
+      },
+      "verification_docs": { "upload_letter": "", "upload_pay_receipt": "", "upload_school_id": "" },
+      "statistical_data": { "clubs_count": 4, "competitions_count": 7, "overall_score": 89 },
+      "education": {
+        "eyebrow": "Grade 9 Results", "year": "Academic Year 2023–24", "overall_pct": "89%", "overall_tag": "A Grade",
+        "subjects": [
+          { "emoji": "📐", "name": "Mathematics",     "grade": "A",  "gradeClass": "g-a",    "score": 91 },
+          { "emoji": "🔬", "name": "Science",          "grade": "A+", "gradeClass": "g-aplus","score": 95 },
+          { "emoji": "💻", "name": "Computer Science","grade": "A+", "gradeClass": "g-aplus","score": 96 },
+          { "emoji": "📖", "name": "English",          "grade": "B+", "gradeClass": "g-bplus","score": 82 },
+          { "emoji": "🌍", "name": "Social Studies",   "grade": "B+", "gradeClass": "g-bplus","score": 80 },
+          { "emoji": "🎨", "name": "Art & Design",     "grade": "A",  "gradeClass": "g-a",    "score": 88 }
+        ]
+      },
+      "experience": {
+        "clubs": [
+          { "icon": "🤖", "name": "Robotics Club",     "years": "3 years · Club President",  "bullets": ["Built 6 autonomous robots", "Won state robotics championship 2023", "Mentors 8 junior members"] },
+          { "icon": "💻", "name": "Coding Club",        "years": "2 years · Active member",   "bullets": ["Programmed robots using Python", "Built IoT home automation prototype", "Participated in 3 hackathons"] },
+          { "icon": "🔬", "name": "Science Club",       "years": "2 years · Active member",   "bullets": ["Built a functioning wind turbine", "Presented at state science fair", "Loves physics experiments"] },
+          { "icon": "⚽", "name": "Sports Club",        "years": "3 years · Team Captain",    "bullets": ["School football team captain", "Led team to district finals 2024", "Trains 5 days a week"] }
+        ],
+        "competitions": [
+          { "name": "State Robotics Championship",             "year": "2023 · State Level",         "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "National STEM Olympiad",                  "year": "2024 · National Level",      "medal": "🥈 Silver Medal",    "medalClass": "silver" },
+          { "name": "Inter-School Hackathon",                  "year": "2024 · City Level",          "medal": "🏆 Winner",          "medalClass": "gold" },
+          { "name": "Young Innovator Challenge",               "year": "2023 · National Level",      "medal": "⭐ Top 15 Finalist", "medalClass": "finalist" },
+          { "name": "District Football Tournament",            "year": "2024 · District Level",      "medal": "🥈 Runners-Up",      "medalClass": "silver" },
+          { "name": "International Science Quiz",              "year": "2023 · International Level", "medal": "🥉 Bronze Medal",    "medalClass": "bronze" },
+          { "name": "School Tech Exhibition",                  "year": "2024 · School Level",        "medal": "🏆 Best Project",    "medalClass": "gold" }
+        ],
+        "projects": [
+          { "thumbEmoji": "🤖", "thumbBg": "linear-gradient(135deg,#0d1f2e,#1a3e57)", "type": "Robotics / Engineering", "name": "Line-Following Robot", "desc": "An autonomous robot built with Arduino that follows a black line on a white surface using IR sensors. Achieved 98% accuracy on complex tracks.", "tags": ["Arduino","IR Sensors","C++"], "award": "🏆 Best Project — School Tech Exhibition 2024" },
+          { "thumbEmoji": "🏠", "thumbBg": "linear-gradient(135deg,#1a0d2e,#2d1a57)", "type": "IoT / Home Automation",  "name": "Smart Home Prototype",  "desc": "A miniature smart home model with voice-activated lights, automatic fans, and a security camera using Raspberry Pi and Google Assistant.", "tags": ["Raspberry Pi","IoT","Python"], "award": null },
+          { "thumbEmoji": "💨", "thumbBg": "linear-gradient(135deg,#0d2e1a,#1a571a)", "type": "Science / Energy",       "name": "Mini Wind Turbine",     "desc": "A working wind turbine model that generates enough electricity to power an LED panel. Presented at the State Science Fair.", "tags": ["Mechanical","Energy","3D Model"], "award": null }
+        ],
+        "skills": [
+          { "title": "🔧 Engineering Skills", "items": [{"name":"Robotics & Automation","pct":92},{"name":"Circuit Design","pct":88},{"name":"3D Modelling","pct":78},{"name":"Mechanical Problem Solving","pct":90}] },
+          { "title": "💻 Technical Skills",   "items": [{"name":"Arduino / C++","pct":90},{"name":"Python","pct":82},{"name":"Raspberry Pi","pct":75},{"name":"CAD Software","pct":70}] },
+          { "title": "🤝 Soft Skills",        "items": [{"name":"Team Leadership","pct":91},{"name":"Creative Thinking","pct":88},{"name":"Perseverance","pct":95},{"name":"Communication","pct":80}] }
+        ]
+      },
+      "certificates": [
+        { "icon": "🥇", "name": "State Robotics Gold",        "issuer": "State Level · 2023",      "certificate_type": "Gold Medal",  "issue_date": "2023-11-20" },
+        { "icon": "🥈", "name": "National STEM Silver",       "issuer": "National Level · 2024",   "certificate_type": "Silver Medal","issue_date": "2024-03-08" },
+        { "icon": "🏆", "name": "Hackathon Winner",           "issuer": "City Level · 2024",       "certificate_type": "Winner",      "issue_date": "2024-05-14" },
+        { "icon": "⭐", "name": "Young Innovator Top 15",     "issuer": "National Level · 2023",   "certificate_type": "Finalist",    "issue_date": "2023-09-30" },
+        { "icon": "🥈", "name": "Football Runners-Up",        "issuer": "District Level · 2024",   "certificate_type": "Runner-Up",   "issue_date": "2024-01-25" },
+        { "icon": "🥉", "name": "Science Quiz Bronze",        "issuer": "International · 2023",    "certificate_type": "Bronze Medal","issue_date": "2023-07-12" },
+        { "icon": "🏆", "name": "Best Project Award",         "issuer": "School Level · 2024",     "certificate_type": "Winner",      "issue_date": "2024-02-18" }
+      ],
+      "blog": [
+        { "tag": "Robotics",    "tagColor": "#5dd6b0", "tagBg": "rgba(93,214,176,0.1)",  "date": "May 10, 2024",      "title": "How I Built My First Autonomous Robot", "excerpt": "The first time my robot followed a line on its own, I sat there for a full minute just watching it. I had written the code, soldered the circuits, and assembled the chassis — but seeing it actually work felt like magic...", "content": "<p>The first time my robot followed a line on its own, I sat there for a full minute just watching it. I had written the code, soldered the circuits, and assembled the chassis — but seeing it actually work felt like magic.</p><p>It took three weeks and six failed prototypes. The biggest lesson: debugging a robot is nothing like debugging code. When something goes wrong, it could be the sensor, the motor, the code, the power supply, or the physical alignment. You have to think in systems.</p><p>If you want to get into robotics, start with a simple Arduino kit. Don't worry about being perfect. Blow up a few components. That's how you learn which wires not to touch.</p>" },
+        { "tag": "Sports",      "tagColor": "#7c6af7", "tagBg": "rgba(124,106,247,0.1)", "date": "February 28, 2024", "title": "What Football Taught Me About Engineering",  "excerpt": "On the field, every player has a role. The system only works when everyone does their job — and adapts when things go wrong. Sound familiar?...", "content": "<p>On the field, every player has a role. The system only works when everyone does their job — and adapts when things go wrong. Sound familiar? That's exactly how a robot works.</p><p>Football taught me to think about redundancy — what happens when your striker is out? You adjust. In robotics, when one sensor fails, your system needs a fallback. The mental models are identical.</p><p>Captaining the school team also taught me that the best leader is the one who makes everyone around them better. I try to bring that to Robotics Club too.</p>" },
+        { "tag": "Technology",  "tagColor": "#f7a16a", "tagBg": "rgba(247,161,106,0.1)", "date": "January 5, 2024",   "title": "Why Every Student Should Learn to Solder",      "excerpt": "Soldering is the closest thing to magic I know. You take two pieces of metal, apply heat and a thin wire of tin-lead alloy, and suddenly they are one...", "content": "<p>Soldering is the closest thing to magic I know. You take two pieces of metal, apply heat and a thin wire of tin-lead alloy, and suddenly they are one. A circuit comes alive.</p><p>Most coding-focused schools skip physical electronics entirely. That's a mistake. Understanding that software controls hardware — and that hardware can fail in ways software can't predict — makes you a fundamentally better engineer.</p><p>You don't need a lab. A basic soldering iron costs less than a meal out. Start with an LED kit. It's twenty minutes of work that changes how you see every electronic device you own.</p>" }
+      ],
+      "testimonials": [
+        { "text": "Rohan has an instinct for engineering that I rarely see in students his age. He doesn't just build — he thinks deeply about why something fails and how to make it better.",  "name": "Mr. Deepak Joshi",   "role": "Physics Teacher",         "initials": "DJ", "avatarBg": "rgba(93,214,176,0.15)",  "avatarColor": "#5dd6b0" },
+        { "text": "From the moment Rohan joined Robotics Club, the energy in the room changed. He pushes everyone to aim higher while keeping the atmosphere collaborative and fun.",          "name": "Ms. Nandita Shah",   "role": "GEMMA Club Coordinator",  "initials": "NS", "avatarBg": "rgba(124,106,247,0.15)", "avatarColor": "#7c6af7" },
+        { "text": "Rohan balances academics, robotics, and football without missing a beat. As a parent, watching him lead his football team to the district finals was incredibly proud.",   "name": "Vikram Mehta",       "role": "Parent",                  "initials": "VM", "avatarBg": "rgba(247,161,106,0.15)", "avatarColor": "#f7a16a" }
+      ]
+    },
+
+    {
+      "id": "ananya-krishnan",
+      "meta": { "pageTitle": "Ananya Krishnan | Student Portfolio", "badge": "GEMMA Club Student Portfolio" },
+      "student_info": {
+        "student_name": "Ananya Krishnan", "first_name": "Ananya", "last_name": "Krishnan", "full_name": "Ananya Suresh Krishnan",
+        "date_of_birth": "19 January 2012", "grade": "Grade 7", "section": "Section A",
+        "school_name": "The PSBB Millennium School", "city": "Chennai", "country": "India",
+        "languages": "English, Tamil, Hindi", "career_goal": "Environmental Scientist",
+        "participation_category": "GEMMA Club — Environment & Arts",
+        "photo": "girlimage2.jpg", "photo_tags": ["🌿 Environment", "🎭 Drama", "📸 Photography", "🔬 Science"],
+        "introduction": "I believe the Earth is the greatest project we are all working on together. Through science, storytelling, and art, I want to help people fall in love with the natural world before it's too late.",
+        "interests": ["🌿 Environmental Science", "🎭 Drama & Theatre", "📸 Photography", "🔬 Biology", "📖 Writing", "🌊 Ocean Conservation", "🎨 Painting", "🦋 Biodiversity"]
+      },
+      "contact_info": {
+        "email": "ananya.krishnan@example.com",
+        "address": "Velachery, Chennai, Tamil Nadu 600042, India",
+        "parent_name": "Suresh Krishnan", "parent_phone": "+91 98401 23456", "parent_email": "suresh.krishnan@example.com",
+        "principal_name": "Dr. Lakshmi Rajan", "principal_contact": "principal@psbbmillennium.edu.in",
+        "school_incharge": "Ms. Preethi Nair", "school_incharge_contact": "coordinator@psbbmillennium.edu.in",
+        "socials": [
+          { "icon": "💼", "title": "LinkedIn",  "url": "#" },
+          { "icon": "📸", "title": "Instagram", "url": "#" },
+          { "icon": "🐦", "title": "Twitter",   "url": "#" }
+        ]
+      },
+      "verification_docs": { "upload_letter": "", "upload_pay_receipt": "", "upload_school_id": "" },
+      "statistical_data": { "clubs_count": 5, "competitions_count": 6, "overall_score": 93 },
+      "education": {
+        "eyebrow": "Grade 7 Results", "year": "Academic Year 2023–24", "overall_pct": "93%", "overall_tag": "Distinction",
+        "subjects": [
+          { "emoji": "🔬", "name": "Science",          "grade": "A+", "gradeClass": "g-aplus","score": 97 },
+          { "emoji": "📖", "name": "English",           "grade": "A+", "gradeClass": "g-aplus","score": 96 },
+          { "emoji": "📐", "name": "Mathematics",      "grade": "A",  "gradeClass": "g-a",    "score": 91 },
+          { "emoji": "🌍", "name": "Social Studies",    "grade": "A",  "gradeClass": "g-a",    "score": 92 },
+          { "emoji": "💻", "name": "Computer Science", "grade": "A",  "gradeClass": "g-a",    "score": 88 },
+          { "emoji": "🎨", "name": "Art & Design",      "grade": "A+", "gradeClass": "g-aplus","score": 98 }
+        ]
+      },
+      "experience": {
+        "clubs": [
+          { "icon": "🌿", "name": "Eco Club",           "years": "3 years · Club President",  "bullets": ["Led school's zero-plastic campaign", "Planted 200 trees in 2023", "Won national eco-school award"] },
+          { "icon": "🎭", "name": "Drama Club",          "years": "2 years · Lead Actress",    "bullets": ["Performed in 4 school plays", "Won best actress at inter-school fest", "Wrote and directed one original play"] },
+          { "icon": "📸", "name": "Photography Club",    "years": "2 years · Active member",   "bullets": ["Nature photography series exhibited", "Won state youth photography award", "Teaches photo editing to juniors"] },
+          { "icon": "🔬", "name": "Science Club",        "years": "2 years · Secretary",       "bullets": ["Led ocean microplastics study", "Presented at national environment summit", "Published in school science journal"] },
+          { "icon": "📖", "name": "Creative Writing Club","years": "1 year · Active member",  "bullets": ["Published 3 short stories", "Won essay competition on climate change", "Contributes to school magazine monthly"] }
+        ],
+        "competitions": [
+          { "name": "National Eco-School Award",                "year": "2023 · National Level",      "medal": "🥇 Gold — Best Eco School", "medalClass": "gold" },
+          { "name": "State Youth Photography Award",            "year": "2024 · State Level",         "medal": "🥇 Gold Medal",             "medalClass": "gold" },
+          { "name": "Inter-School Drama Festival",              "year": "2023 · City Level",          "medal": "🏆 Best Actress",           "medalClass": "gold" },
+          { "name": "National Environment Essay Competition",   "year": "2024 · National Level",      "medal": "🥈 Silver Medal",           "medalClass": "silver" },
+          { "name": "Young Scientist Biodiversity Challenge",   "year": "2023 · National Level",      "medal": "⭐ Top 10 Finalist",        "medalClass": "finalist" },
+          { "name": "International Painting Olympics",          "year": "2023 · International Level", "medal": "🥉 Bronze Medal",           "medalClass": "bronze" }
+        ],
+        "projects": [
+          { "thumbEmoji": "🌊", "thumbBg": "linear-gradient(135deg,#0d1f2e,#1a3e5f)", "type": "Environmental Science",  "name": "Microplastics in Marina Beach", "desc": "A field study measuring microplastic concentration at three zones of Marina Beach using filtration and microscopy. Findings presented at national environment summit.", "tags": ["Field Study","Biology","Data Analysis"], "award": "🏆 Presented at National Environment Summit 2023" },
+          { "thumbEmoji": "📸", "thumbBg": "linear-gradient(135deg,#1f0d2e,#3e1a5f)", "type": "Photography & Storytelling","name": "Vanishing Green — Photo Series", "desc": "A 20-photograph series documenting the disappearance of urban green spaces in Chennai over five years, using archival photos and new images. State award winner.", "tags": ["Photography","Environment","Storytelling"], "award": "🏆 State Youth Photography Award 2024" },
+          { "thumbEmoji": "🎭", "thumbBg": "linear-gradient(135deg,#2e0d0d,#5f1a1a)", "type": "Drama & Writing",         "name": "The Last Forest — Original Play", "desc": "An original 30-minute play written and co-directed by Ananya, performed at the school annual day. The play tells the story of a village defending its forest against deforestation.", "tags": ["Playwriting","Direction","Performance"], "award": null }
+        ],
+        "skills": [
+          { "title": "🌿 Environmental Skills", "items": [{"name":"Field Research & Sampling","pct":88},{"name":"Biodiversity Documentation","pct":85},{"name":"Environmental Report Writing","pct":91},{"name":"Ecological Data Analysis","pct":82}] },
+          { "title": "🎨 Creative Skills",      "items": [{"name":"Photography & Editing","pct":93},{"name":"Painting & Illustration","pct":90},{"name":"Creative Writing","pct":94},{"name":"Drama & Performance","pct":92}] },
+          { "title": "🤝 Soft Skills",          "items": [{"name":"Public Communication","pct":93},{"name":"Leadership & Initiative","pct":90},{"name":"Empathy & Collaboration","pct":96},{"name":"Research & Curiosity","pct":94}] }
+        ]
+      },
+      "certificates": [
+        { "icon": "🥇", "name": "National Eco-School Gold",       "issuer": "National Level · 2023",      "certificate_type": "Gold Medal",  "issue_date": "2023-10-15" },
+        { "icon": "🥇", "name": "State Photography Gold",         "issuer": "State Level · 2024",         "certificate_type": "Gold Medal",  "issue_date": "2024-03-22" },
+        { "icon": "🏆", "name": "Best Actress — Drama Fest",      "issuer": "City Level · 2023",          "certificate_type": "Winner",      "issue_date": "2023-12-05" },
+        { "icon": "🥈", "name": "Environment Essay Silver",       "issuer": "National Level · 2024",      "certificate_type": "Silver Medal","issue_date": "2024-05-30" },
+        { "icon": "⭐", "name": "Biodiversity Challenge Top 10",  "issuer": "National Level · 2023",      "certificate_type": "Finalist",    "issue_date": "2023-08-18" },
+        { "icon": "🥉", "name": "Painting Olympics Bronze",       "issuer": "International Level · 2023", "certificate_type": "Bronze Medal","issue_date": "2023-07-28" }
+      ],
+      "blog": [
+        { "tag": "Environment", "tagColor": "#5dd6b0", "tagBg": "rgba(93,214,176,0.1)",  "date": "April 22, 2024",    "title": "What I Found in the Sand at Marina Beach",         "excerpt": "Earth Day seemed like the right day to share what our team discovered during our microplastics study. We filtered five litres of seawater from three different zones and what we saw under the microscope was alarming...", "content": "<p>Earth Day seemed like the right day to share what our team discovered during our microplastics study. We filtered five litres of seawater from three different zones and what we saw under the microscope was alarming — thousands of plastic fibres, fragments, and pellets invisible to the naked eye.</p><p>The highest concentration was near the fishing zone. The lowest was at the northern end — but still present. There is no clean part of our beach anymore.</p><p>I'm not sharing this to make anyone feel guilty. I'm sharing it because the moment you actually see the data, it stops being abstract. It becomes personal. And that's when people start to act.</p>" },
+        { "tag": "Drama",       "tagColor": "#7c6af7", "tagBg": "rgba(124,106,247,0.1)", "date": "December 10, 2023", "title": "Why I Wrote a Play About Deforestation",            "excerpt": "Science reports reach scientists. Plays reach everyone. That was the thought behind The Last Forest — a story I wanted to tell in a way that made people feel the loss, not just understand it intellectually...", "content": "<p>Science reports reach scientists. Plays reach everyone. That was the thought behind The Last Forest — a story I wanted to tell in a way that made people feel the loss, not just understand it intellectually.</p><p>Writing the play taught me that the best environmental communication is never about guilt. It's about love. The village in my play doesn't fight for the forest because they're environmentalists. They fight because it's home.</p><p>If you want to change minds about the environment, stop citing statistics and start telling stories. Statistics inform. Stories transform.</p>" },
+        { "tag": "Photography", "tagColor": "#f7a16a", "tagBg": "rgba(247,161,106,0.1)", "date": "March 5, 2024",     "title": "How Photography Made Me a Better Scientist",        "excerpt": "Before I had a camera, I looked at nature. After I got one, I started to see it. The difference is enormous...", "content": "<p>Before I had a camera, I looked at nature. After I got one, I started to see it. The difference is enormous.</p><p>Photography forced me to be patient. To wait for the right light. To notice the angle of a leaf, the texture of bark, the way a spider rebuilds after rain. That patience translated directly into my field research — I became a much more careful observer.</p><p>My advice to anyone interested in environmental science: get outside with a camera before you open a textbook. The textbook will make more sense once you've actually seen the thing it's describing.</p>" }
+      ],
+      "testimonials": [
+        { "text": "Ananya combines scientific rigour with extraordinary empathy. Her microplastics study was genuinely publishable quality — remarkable for a Grade 7 student.",           "name": "Ms. Preethi Nair",   "role": "Biology Teacher",         "initials": "PN", "avatarBg": "rgba(93,214,176,0.15)",  "avatarColor": "#5dd6b0" },
+        { "text": "On stage, Ananya commands the room completely. Her original play moved several teachers to tears. She has the rare ability to make an audience feel, not just watch.",  "name": "Mr. Karthik Rajan",  "role": "Drama Coordinator",       "initials": "KR", "avatarBg": "rgba(124,106,247,0.15)", "avatarColor": "#7c6af7" },
+        { "text": "Ananya has led our school to win the national eco-school award. She doesn't just care — she organises, motivates, and delivers. We couldn't be prouder.",              "name": "Suresh Krishnan",    "role": "Parent",                  "initials": "SK", "avatarBg": "rgba(247,161,106,0.15)", "avatarColor": "#f7a16a" }
+      ]
+    },
+
+    {
+      "id": "arjun-nair",
+      "meta": { "pageTitle": "Arjun Nair | Student Portfolio", "badge": "GEMMA Club Student Portfolio" },
+      "student_info": {
+        "student_name": "Arjun Nair", "first_name": "Arjun", "last_name": "Nair", "full_name": "Arjun Mohan Nair",
+        "date_of_birth": "30 April 2009", "grade": "Grade 10", "section": "Section B",
+        "school_name": "Bharatiya Vidya Bhavan", "city": "Kochi", "country": "India",
+        "languages": "English, Malayalam, Hindi", "career_goal": "Entrepreneur & Business Leader",
+        "participation_category": "GEMMA Club — Business & Leadership",
+        "photo": "boyimage3.jpg", "photo_tags": ["💼 Business", "🎤 Debate", "📊 Finance", "♟ Chess"],
+        "introduction": "I want to build companies that solve real problems. From running a school canteen project to winning business plan competitions, I am learning entrepreneurship one idea at a time.",
+        "interests": ["💼 Business & Entrepreneurship", "🎤 Debate", "📊 Finance & Economics", "♟ Chess", "📖 Biographies", "🏏 Cricket", "🎙 Podcasting", "🌐 Global Affairs"]
+      },
+      "contact_info": {
+        "email": "arjun.nair@example.com",
+        "address": "Edapally, Kochi, Kerala 682024, India",
+        "parent_name": "Mohan Nair", "parent_phone": "+91 94470 88899", "parent_email": "mohan.nair@example.com",
+        "principal_name": "Mr. George Mathew", "principal_contact": "principal@bvbkochi.edu.in",
+        "school_incharge": "Ms. Sheeba Thomas", "school_incharge_contact": "coordinator@bvbkochi.edu.in",
+        "socials": [
+          { "icon": "💼", "title": "LinkedIn", "url": "#" },
+          { "icon": "🐦", "title": "Twitter",  "url": "#" },
+          { "icon": "🎙", "title": "Podcast",  "url": "#" }
+        ]
+      },
+      "verification_docs": { "upload_letter": "", "upload_pay_receipt": "", "upload_school_id": "" },
+      "statistical_data": { "clubs_count": 4, "competitions_count": 8, "overall_score": 90 },
+      "education": {
+        "eyebrow": "Grade 10 Results", "year": "Academic Year 2023–24", "overall_pct": "90%", "overall_tag": "A Grade",
+        "subjects": [
+          { "emoji": "📊", "name": "Business Studies",  "grade": "A+", "gradeClass": "g-aplus","score": 98 },
+          { "emoji": "💰", "name": "Economics",          "grade": "A+", "gradeClass": "g-aplus","score": 95 },
+          { "emoji": "📐", "name": "Mathematics",       "grade": "A",  "gradeClass": "g-a",    "score": 90 },
+          { "emoji": "📖", "name": "English",            "grade": "A+", "gradeClass": "g-aplus","score": 96 },
+          { "emoji": "🌍", "name": "Social Studies",     "grade": "A",  "gradeClass": "g-a",    "score": 88 },
+          { "emoji": "💻", "name": "Computer Science",  "grade": "B+", "gradeClass": "g-bplus","score": 82 }
+        ]
+      },
+      "experience": {
+        "clubs": [
+          { "icon": "💼", "name": "Business & Entrepreneurship Club", "years": "3 years · President",       "bullets": ["Ran school canteen project (₹40K revenue)", "Mentors 12 junior student entrepreneurs", "Organised annual startup pitch event"] },
+          { "icon": "🎤", "name": "Debate Club",                      "years": "3 years · Team Captain",    "bullets": ["Won 5 inter-school debate titles", "Represented school at national MUN", "Coaches junior debaters every week"] },
+          { "icon": "♟", "name": "Chess Club",                        "years": "2 years · Active member",   "bullets": ["District chess champion 2023", "Rated 1450 Elo", "Conducts weekend chess sessions"] },
+          { "icon": "🎙", "name": "Media & Journalism Club",           "years": "1 year · Podcast Host",    "bullets": ["Hosts 'Young Minds' school podcast", "Interviewed 3 local entrepreneurs", "200+ monthly listeners"] }
+        ],
+        "competitions": [
+          { "name": "National Business Plan Competition",          "year": "2024 · National Level",      "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "State Debate Championship",                   "year": "2024 · State Level",         "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "National Model United Nations",               "year": "2023 · National Level",      "medal": "🏆 Best Delegate",   "medalClass": "gold" },
+          { "name": "Young Entrepreneur Award",                    "year": "2024 · National Level",      "medal": "⭐ Top 5 Finalist",  "medalClass": "finalist" },
+          { "name": "District Chess Championship",                 "year": "2023 · District Level",      "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "Inter-School Economics Olympiad",             "year": "2024 · State Level",         "medal": "🥈 Silver Medal",    "medalClass": "silver" },
+          { "name": "International Essay on Global Trade",         "year": "2023 · International Level", "medal": "🥉 Bronze Medal",    "medalClass": "bronze" },
+          { "name": "School Innovation Award — Canteen Project",   "year": "2023 · School Level",        "medal": "🏆 Winner",          "medalClass": "gold" }
+        ],
+        "projects": [
+          { "thumbEmoji": "🍱", "thumbBg": "linear-gradient(135deg,#2e1a0d,#5f3a1a)", "type": "Entrepreneurship",  "name": "School Canteen Revamp",      "desc": "Took over the school canteen as a student business project. Redesigned the menu, introduced digital ordering via a WhatsApp bot, and grew revenue by 60% in one term.", "tags": ["Business","Operations","Digital Tools"], "award": "🏆 School Innovation Award 2023" },
+          { "thumbEmoji": "📻", "thumbBg": "linear-gradient(135deg,#0d0d2e,#1a1a57)", "type": "Media / Podcasting",  "name": "Young Minds Podcast",       "desc": "A monthly podcast where Arjun interviews entrepreneurs, teachers, and changemakers. 12 episodes published, 200+ regular listeners from 4 countries.", "tags": ["Podcasting","Interviews","Media"], "award": null },
+          { "thumbEmoji": "📊", "thumbBg": "linear-gradient(135deg,#0d2e0d,#1a571a)", "type": "Business Plan",       "name": "GreenBox — Eco Tiffin Startup","desc": "A business plan for a subscription tiffin service using 100% compostable packaging. Won gold at the National Business Plan Competition 2024.", "tags": ["Startup","Sustainability","Finance"], "award": "🥇 National Business Plan Gold 2024" }
+        ],
+        "skills": [
+          { "title": "💼 Business Skills",   "items": [{"name":"Business Planning","pct":94},{"name":"Financial Modelling","pct":88},{"name":"Market Research","pct":86},{"name":"Sales & Negotiation","pct":91}] },
+          { "title": "🎤 Communication",     "items": [{"name":"Public Speaking & Debate","pct":96},{"name":"Persuasive Writing","pct":92},{"name":"Podcasting & Interviewing","pct":88},{"name":"Storytelling","pct":90}] },
+          { "title": "🤝 Leadership Skills", "items": [{"name":"Team Management","pct":93},{"name":"Strategic Thinking","pct":91},{"name":"Problem Solving","pct":89},{"name":"Mentoring","pct":87}] }
+        ]
+      },
+      "certificates": [
+        { "icon": "🥇", "name": "National Business Plan Gold",   "issuer": "National Level · 2024",      "certificate_type": "Gold Medal",   "issue_date": "2024-04-10" },
+        { "icon": "🥇", "name": "State Debate Gold",             "issuer": "State Level · 2024",         "certificate_type": "Gold Medal",   "issue_date": "2024-02-28" },
+        { "icon": "🏆", "name": "Best Delegate — MUN",           "issuer": "National Level · 2023",      "certificate_type": "Best Delegate","issue_date": "2023-11-15" },
+        { "icon": "⭐", "name": "Young Entrepreneur Top 5",      "issuer": "National Level · 2024",      "certificate_type": "Finalist",     "issue_date": "2024-06-01" },
+        { "icon": "🥇", "name": "District Chess Champion",       "issuer": "District Level · 2023",      "certificate_type": "Gold Medal",   "issue_date": "2023-09-05" },
+        { "icon": "🥈", "name": "Economics Olympiad Silver",     "issuer": "State Level · 2024",         "certificate_type": "Silver Medal", "issue_date": "2024-01-20" },
+        { "icon": "🥉", "name": "Global Trade Essay Bronze",     "issuer": "International Level · 2023", "certificate_type": "Bronze Medal", "issue_date": "2023-08-12" },
+        { "icon": "🏆", "name": "School Innovation Winner",      "issuer": "School Level · 2023",        "certificate_type": "Winner",       "issue_date": "2023-12-20" }
+      ],
+      "blog": [
+        { "tag": "Entrepreneurship", "tagColor": "#5dd6b0", "tagBg": "rgba(93,214,176,0.1)",  "date": "May 15, 2024",      "title": "What Running a School Canteen Taught Me About Business", "excerpt": "I took over a canteen that was losing students to the vending machine outside. Six months later, we had doubled foot traffic, introduced digital ordering, and turned a small profit. Here's what I learnt...", "content": "<p>I took over a canteen that was losing students to the vending machine outside. Six months later, we had doubled foot traffic, introduced digital ordering, and turned a small profit. Here's the most important thing I learnt: operations matter more than ideas.</p><p>The idea — fresher food, better menu, digital ordering — was obvious. The hard part was execution. Coordinating suppliers, managing inventory, training the canteen staff, handling complaints. That's where most business plans fall apart.</p><p>Every student who wants to be an entrepreneur should run something real before they graduate. A stall. A service. A small project. Nothing teaches you faster than having actual customers.</p>" },
+        { "tag": "Debate",           "tagColor": "#7c6af7", "tagBg": "rgba(124,106,247,0.1)", "date": "March 1, 2024",     "title": "The One Debate Skill No One Teaches You",              "excerpt": "Every debate coach will tell you to research your topic, structure your arguments, and speak clearly. All true. But the skill that actually wins debates is something different...", "content": "<p>Every debate coach will tell you to research your topic, structure your arguments, and speak clearly. All true. But the skill that actually wins debates is something different: knowing when to concede a point.</p><p>The best debaters I have faced are not the ones who defend every position to the death. They're the ones who say 'that's a fair point — here's why it doesn't change the conclusion' and move on. Judges love intellectual honesty. It signals confidence.</p><p>In business, the same rule applies. Investors back founders who understand their own weaknesses as clearly as their strengths. Start practising that in debate, and you'll use it everywhere.</p>" },
+        { "tag": "Finance",          "tagColor": "#f7a16a", "tagBg": "rgba(247,161,106,0.1)", "date": "January 18, 2024",  "title": "Why Every Teenager Should Learn Basic Finance",         "excerpt": "I am 15 and I have built three financial models. Not because my school required it — but because I realised early on that not understanding money is a massive disadvantage...", "content": "<p>I am 15 and I have built three financial models. Not because my school required it — but because I realised early on that not understanding money is a massive disadvantage in life.</p><p>A financial model isn't magic. It's just a spreadsheet that answers the question: if X happens, what happens to the money? Once you understand that, you can apply it to a school project, a personal savings goal, or a business plan.</p><p>Start with your own pocket money. Where does it go? What would happen if you saved 20% of it every month? What is the compound effect over five years? These questions are more valuable than most things you'll learn in a textbook.</p>" }
+      ],
+      "testimonials": [
+        { "text": "Arjun is the most entrepreneurially minded student I have taught in 20 years. He doesn't just learn business theory — he lives it. His canteen project was genuinely impressive.",  "name": "Ms. Sheeba Thomas",  "role": "Business Studies Teacher", "initials": "ST", "avatarBg": "rgba(93,214,176,0.15)",  "avatarColor": "#5dd6b0" },
+        { "text": "As debate team captain, Arjun elevated every member around him. He has a rare combination of intellectual sharpness and genuine generosity in sharing what he knows.",           "name": "Mr. George Mathew",  "role": "Principal",               "initials": "GM", "avatarBg": "rgba(124,106,247,0.15)", "avatarColor": "#7c6af7" },
+        { "text": "Arjun has been running at full speed since he was twelve. As his parent, my job is mostly to make sure he sleeps. He will build something significant — I have no doubt.",     "name": "Mohan Nair",         "role": "Parent",                  "initials": "MN", "avatarBg": "rgba(247,161,106,0.15)", "avatarColor": "#f7a16a" }
+      ]
+    },
+
+    {
+      "id": "ishaan-gupta",
+      "meta": { "pageTitle": "Ishaan Gupta | Student Portfolio", "badge": "GEMMA Club Student Portfolio" },
+      "student_info": {
+        "student_name": "Ishaan Gupta", "first_name": "Ishaan", "last_name": "Gupta", "full_name": "Ishaan Rajat Gupta",
+        "date_of_birth": "08 November 2011", "grade": "Grade 8", "section": "Section D",
+        "school_name": "The Doon School", "city": "Dehradun", "country": "India",
+        "languages": "English, Hindi", "career_goal": "Game Developer & Animator",
+        "participation_category": "GEMMA Club — Digital Arts & Gaming",
+        "photo": "boyimage2.webp", "photo_tags": ["🎮 Gaming", "🎨 Animation", "💻 Coding", "🎵 Music Production"],
+        "introduction": "I design worlds for a living — or at least, I'm practising. From pixel art to 3D animation, from Scratch games to music production, I believe creative technology is the future of storytelling.",
+        "interests": ["🎮 Game Design", "🎨 Animation & Motion Graphics", "💻 Coding", "🎵 Music Production", "📽 Film Making", "🖼 Digital Illustration", "📖 Manga & Comics", "🔊 Sound Design"]
+      },
+      "contact_info": {
+        "email": "ishaan.gupta@example.com",
+        "address": "Rajpur Road, Dehradun, Uttarakhand 248001, India",
+        "parent_name": "Rajat Gupta", "parent_phone": "+91 98370 44455", "parent_email": "rajat.gupta@example.com",
+        "principal_name": "Dr. Amit Kapoor", "principal_contact": "principal@doonschool.edu.in",
+        "school_incharge": "Ms. Renu Sharma", "school_incharge_contact": "coordinator@doonschool.edu.in",
+        "socials": [
+          { "icon": "💻", "title": "GitHub",    "url": "#" },
+          { "icon": "📸", "title": "Instagram", "url": "#" },
+          { "icon": "🎮", "title": "Itch.io",   "url": "#" }
+        ]
+      },
+      "verification_docs": { "upload_letter": "", "upload_pay_receipt": "", "upload_school_id": "" },
+      "statistical_data": { "clubs_count": 4, "competitions_count": 5, "overall_score": 87 },
+      "education": {
+        "eyebrow": "Grade 8 Results", "year": "Academic Year 2023–24", "overall_pct": "87%", "overall_tag": "A Grade",
+        "subjects": [
+          { "emoji": "💻", "name": "Computer Science", "grade": "A+", "gradeClass": "g-aplus","score": 98 },
+          { "emoji": "🎨", "name": "Art & Design",      "grade": "A+", "gradeClass": "g-aplus","score": 97 },
+          { "emoji": "📐", "name": "Mathematics",       "grade": "A",  "gradeClass": "g-a",    "score": 88 },
+          { "emoji": "📖", "name": "English",            "grade": "A",  "gradeClass": "g-a",    "score": 86 },
+          { "emoji": "🔬", "name": "Science",            "grade": "B+", "gradeClass": "g-bplus","score": 82 },
+          { "emoji": "🌍", "name": "Social Studies",     "grade": "B+", "gradeClass": "g-bplus","score": 80 }
+        ]
+      },
+      "experience": {
+        "clubs": [
+          { "icon": "🎮", "name": "Game Design Club",        "years": "2 years · Club President",  "bullets": ["Built 8 original games in Scratch & Unity", "Organised school game jam 2024", "Won national student game competition"] },
+          { "icon": "🎨", "name": "Animation & Film Club",   "years": "2 years · Active member",   "bullets": ["Produced 3 short animated films", "Film screened at youth festival", "Teaches Blender basics to classmates"] },
+          { "icon": "🎵", "name": "Music Production Club",   "years": "1 year · Active member",    "bullets": ["Produces background scores for school films", "Created soundtrack for award-winning game", "Learning FL Studio and Ableton"] },
+          { "icon": "💻", "name": "Coding Club",              "years": "1.5 years · Active member", "bullets": ["Transitioned from Scratch to Python & JavaScript", "Built interactive web portfolio", "Participated in 2 hackathons"] }
+        ],
+        "competitions": [
+          { "name": "National Student Game Development Competition", "year": "2024 · National Level",      "medal": "🥇 Gold Medal",      "medalClass": "gold" },
+          { "name": "State Youth Film Festival — Animation",         "year": "2023 · State Level",         "medal": "🥈 Silver Medal",    "medalClass": "silver" },
+          { "name": "School Game Jam",                               "year": "2024 · School Level",        "medal": "🏆 Best Game",       "medalClass": "gold" },
+          { "name": "Digital Art Competition — Young Creators",      "year": "2023 · National Level",      "medal": "⭐ Top 10 Finalist", "medalClass": "finalist" },
+          { "name": "International Scratch Competition",             "year": "2023 · International Level", "medal": "🥉 Bronze Medal",    "medalClass": "bronze" }
+        ],
+        "projects": [
+          { "thumbEmoji": "🌌", "thumbBg": "linear-gradient(135deg,#0d0d2e,#1a0d3e)", "type": "Game Development",     "name": "Void Runner — 2D Platformer",  "desc": "A fully original 2D platformer game built in Scratch with 10 levels, custom pixel art, original soundtrack, and a save-state system. Won national gold.", "tags": ["Scratch","Pixel Art","Game Design"], "award": "🥇 National Game Development Gold 2024" },
+          { "thumbEmoji": "🦊", "thumbBg": "linear-gradient(135deg,#2e1a0d,#5e3a0d)", "type": "Animation / Film",     "name": "The Fox and the Algorithm",   "desc": "A 4-minute animated short film about a fox who discovers an AI trying to predict its path through a forest. Screened at the State Youth Film Festival.", "tags": ["Blender","Animation","Storytelling"], "award": "🥈 State Youth Film Festival Silver 2023" },
+          { "thumbEmoji": "🎵", "thumbBg": "linear-gradient(135deg,#0d2e2e,#0d5e5e)", "type": "Music Production",     "name": "Echoes — Original Game OST",   "desc": "A 12-track original game soundtrack composed for Void Runner using FL Studio. Covers ambient, action, and boss-fight themes.", "tags": ["FL Studio","Composition","Sound Design"], "award": null }
+        ],
+        "skills": [
+          { "title": "🎮 Game & Design Skills",  "items": [{"name":"Game Design (Scratch/Unity)","pct":92},{"name":"Pixel Art & Digital Illustration","pct":90},{"name":"3D Animation (Blender)","pct":78},{"name":"UI/UX for Games","pct":83}] },
+          { "title": "💻 Technical Skills",      "items": [{"name":"Scratch Programming","pct":95},{"name":"Python & JavaScript","pct":75},{"name":"FL Studio / Ableton","pct":82},{"name":"Video Editing","pct":85}] },
+          { "title": "🤝 Creative Soft Skills",  "items": [{"name":"Storytelling & Narrative","pct":93},{"name":"Creative Problem Solving","pct":90},{"name":"Attention to Detail","pct":94},{"name":"Collaboration","pct":85}] }
+        ]
+      },
+      "certificates": [
+        { "icon": "🥇", "name": "National Game Dev Gold",      "issuer": "National Level · 2024",      "certificate_type": "Gold Medal",  "issue_date": "2024-03-30" },
+        { "icon": "🥈", "name": "Youth Film Festival Silver",  "issuer": "State Level · 2023",         "certificate_type": "Silver Medal","issue_date": "2023-11-08" },
+        { "icon": "🏆", "name": "School Game Jam Best Game",   "issuer": "School Level · 2024",        "certificate_type": "Winner",      "issue_date": "2024-02-14" },
+        { "icon": "⭐", "name": "Digital Art Top 10",          "issuer": "National Level · 2023",      "certificate_type": "Finalist",    "issue_date": "2023-09-25" },
+        { "icon": "🥉", "name": "International Scratch Bronze","issuer": "International Level · 2023", "certificate_type": "Bronze Medal","issue_date": "2023-07-05" }
+      ],
+      "blog": [
+        { "tag": "Game Design",  "tagColor": "#7c6af7", "tagBg": "rgba(124,106,247,0.1)", "date": "April 5, 2024",     "title": "How I Built a 10-Level Game in Scratch", "excerpt": "Most people think Scratch is for little kids. I thought so too, until I challenged myself to build something in it that would actually be fun to play for more than five minutes...", "content": "<p>Most people think Scratch is for little kids. I thought so too, until I challenged myself to build something in it that would actually be fun to play for more than five minutes.</p><p>Void Runner took four months. The first two months were chaos — I kept adding features before the core mechanic was fun. The lesson: make the jumping feel good before you add enemies. Make the enemies interesting before you add levels. Build from the centre out.</p><p>The game shipped with 10 levels, a save system, and a full original soundtrack. It won gold at the national competition. Scratch isn't just for kids — it's for anyone willing to take it seriously.</p>" },
+        { "tag": "Animation",   "tagColor": "#5dd6b0", "tagBg": "rgba(93,214,176,0.1)",  "date": "November 20, 2023", "title": "What Animating a Fox Taught Me About Storytelling", "excerpt": "When I started The Fox and the Algorithm, I thought the hardest part would be the technical animation. It wasn't. The hardest part was making the audience care about a fox in four minutes...", "content": "<p>When I started The Fox and the Algorithm, I thought the hardest part would be the technical animation. It wasn't. The hardest part was making the audience care about a fox in four minutes.</p><p>I rewrote the script six times. Each time, I cut exposition and added action. By the final version, the fox never speaks — you understand everything through movement and music alone. That constraint made the film better.</p><p>Animation is the most demanding art form I know because you control everything: timing, colour, sound, movement, story. Nothing happens by accident. That total control is also what makes it incredibly satisfying when it works.</p>" },
+        { "tag": "Music",       "tagColor": "#f7a16a", "tagBg": "rgba(247,161,106,0.1)", "date": "January 30, 2024",  "title": "Why Game Music is the Most Underrated Art Form",    "excerpt": "Ask someone to name a great film score and they'll name five immediately. Ask them to name a great video game score and they'll pause. That pause says everything...", "content": "<p>Ask someone to name a great film score and they'll name five immediately. Ask them to name a great video game score and they'll pause. That pause says everything.</p><p>Game music is uniquely difficult because it must loop seamlessly, adapt to player actions, and work as background and foreground simultaneously. It cannot have a beginning, middle, and end in the traditional sense because the player controls the timeline.</p><p>Composing the Void Runner soundtrack was my education in constraint. Every track had to work at 90 seconds, 3 minutes, or 10 minutes. That discipline made me a far better composer than any film scoring project could have.</p>" }
+      ],
+      "testimonials": [
+        { "text": "Ishaan is one of those rare students who has found his calling early and is pursuing it with absolute seriousness. His game dev work is at a professional level for his age.",  "name": "Ms. Renu Sharma",   "role": "Computer Science Teacher", "initials": "RS", "avatarBg": "rgba(124,106,247,0.15)", "avatarColor": "#7c6af7" },
+        { "text": "The Fox and the Algorithm moved the entire audience at our film festival. That a 13-year-old made it in Blender with no formal training is extraordinary.",                   "name": "Mr. Tarun Batra",   "role": "Art & Film Coordinator",  "initials": "TB", "avatarBg": "rgba(93,214,176,0.15)",  "avatarColor": "#5dd6b0" },
+        { "text": "Ishaan disappears into his room and emerges with games, films, and music. As a parent it is occasionally terrifying, but mainly extraordinary. We are very proud.",          "name": "Rajat Gupta",       "role": "Parent",                  "initials": "RG", "avatarBg": "rgba(247,161,106,0.15)", "avatarColor": "#f7a16a" }
+      ]
+    }
+  ]
 }
