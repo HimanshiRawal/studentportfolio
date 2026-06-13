@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "pageTitle": "Aarav Sharma | Student Portfolio",
+    "badge": "GEMMA Club Student Portfolio"
+  },
+  "hero": {
+    "name": "Aarav",
+    "surname": "Sharma",
+    "grade": "Grade 8",
+    "school": "Sunrise International School",
+    "city": "Mumbai, India",
+    "photo": "image of boy.png",
+    "photoAlt": "Aarav Sharma",
+    "introduction": "I am passionate about <em>mathematics</em>, <em>coding</em>, <em>public speaking</em>, and <em>scientific innovation</em>. Through GEMMA Clubs, I continuously develop my skills and participate in national and international competitions.",
+    "photoTags": ["🧮 Abacus", "💻 Coding", "🔬 Science", "🎤 Speaker"],
+    "stats": [
+      { "count": 5, "label": "GEMMA Clubs" },
+      { "count": 6, "label": "Competitions" },
+      { "count": 92, "label": "% Score" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Who I Am",
+    "title": "About Me",
+    "subtitle": "A curious, driven student who believes that learning never stops — inside or outside the classroom.",
+    "paragraphs": [
+      "Growing up with a deep fascination for numbers and technology, I have always sought challenges that push my thinking forward. Whether it's solving complex math problems, building a Scratch project, or presenting ideas on stage, I approach everything with enthusiasm and dedication.",
+      "My dream is to become an <strong>Aerospace Engineer</strong> — someone who contributes to humanity's journey beyond Earth. Every competition, project, and club activity brings me one step closer to that vision."
+    ],
+    "interests": [
+      "🧮 Mental Math", "💻 Coding", "🤖 Robotics",
+      "🎤 Public Speaking", "♟ Chess",
+      "🔬 Science Experiments", "🎨 Digital Design", "📖 Reading"
+    ],
+    "fields": [
+      { "icon": "👤", "label": "Full Name", "value": "Aarav Rajan Sharma" },
+      { "icon": "🎂", "label": "Date of Birth", "value": "14 March 2011" },
+      { "icon": "📚", "label": "Grade / Class", "value": "Grade 8 — Section A" },
+      { "icon": "🏫", "label": "School", "value": "Sunrise International School" },
+      { "icon": "📍", "label": "City / Country", "value": "Mumbai, India" },
+      { "icon": "🚀", "label": "Career Goal", "value": "Aerospace Engineer" },
+      { "icon": "🌐", "label": "Languages", "value": "English, Hindi, Marathi" }
+    ]
+  },
+  "academics": {
+    "eyebrow": "Grade 8 Results",
+    "title": "Academic Performance",
+    "subtitle": "Consistent excellence across all core subjects — with a special passion for STEM.",
+    "year": "Academic Year 2023–24",
+    "overallLabel": "Overall Result",
+    "overallTag": "Distinction",
+    "overallPct": "92%",
+    "subjects": [
+      { "emoji": "📐", "name": "Mathematics",      "grade": "A+", "gradeClass": "g-aplus", "score": 98 },
+      { "emoji": "🔬", "name": "Science",           "grade": "A",  "gradeClass": "g-a",    "score": 92 },
+      { "emoji": "📖", "name": "English",           "grade": "A",  "gradeClass": "g-a",    "score": 90 },
+      { "emoji": "💻", "name": "Computer Science",  "grade": "A+", "gradeClass": "g-aplus", "score": 97 },
+      { "emoji": "🌍", "name": "Social Studies",    "grade": "B+", "gradeClass": "g-bplus", "score": 85 },
+      { "emoji": "🎨", "name": "Art & Design",      "grade": "A",  "gradeClass": "g-a",    "score": 91 }
+    ]
+  },
+  "clubs": {
+    "eyebrow": "Extracurricular",
+    "title": "GEMMA Club Participation",
+    "subtitle": "Five clubs, endless learning — each one shaping a different dimension of who I am.",
+    "list": [
+      {
+        "icon": "🧮",
+        "name": "Abacus Club",
+        "years": "2 years · State-level finalist",
+        "bullets": ["Mastered 2-rod to 4-rod techniques", "Mentors junior students", "State-level finalist 2023"]
+      },
+      {
+        "icon": "📐",
+        "name": "Mathematics Club",
+        "years": "2 years · Club Secretary",
+        "bullets": ["Competed in 3 olympiads", "Led weekly problem-solving sessions", "Developed a math puzzle booklet"]
+      },
+      {
+        "icon": "💻",
+        "name": "Coding Club",
+        "years": "1.5 years · Active member",
+        "bullets": ["Built 5 Scratch projects", "Learning HTML, CSS & Python basics", "Participated in 2 coding challenges"]
+      },
+      {
+        "icon": "🎤",
+        "name": "Public Speaking Club",
+        "years": "1 year · Vice President",
+        "bullets": ["Represented school at international event", "Coaches juniors in debate preparation", "Bronze at Intl. Speaker Competition"]
+      },
+      {
+        "icon": "🔬",
+        "name": "Science Club",
+        "years": "2 years · Project Lead",
+        "bullets": ["Led smart irrigation science project", "Top 20 Young Scientist Award", "Organized 2 school science fairs"]
+      }
+    ]
+  },
+  "competitions": {
+    "eyebrow": "Recognition",
+    "title": "Competition Achievements",
+    "subtitle": "Competing at national and international level since Grade 6.",
+    "list": [
+      { "name": "International Abacus Olympiad",               "year": "2024 · International Level", "medal": "🥇 Gold Medal",       "medalClass": "gold" },
+      { "name": "International Essay Writing Competition",      "year": "2024 · International Level", "medal": "🥈 Silver Medal",     "medalClass": "silver" },
+      { "name": "Young Scientist Award",                        "year": "2023 · National Level",      "medal": "⭐ Top 20 Finalist",  "medalClass": "finalist" },
+      { "name": "International Student Speaker Competition",    "year": "2023 · International Level", "medal": "🥉 Bronze Medal",     "medalClass": "bronze" },
+      { "name": "International Painting Olympics",             "year": "2023 · International Level", "medal": "🎨 Participation",    "medalClass": "participation" },
+      { "name": "School Innovation Award — Smart Irrigation",  "year": "2024 · School Level",        "medal": "🏆 Winner",           "medalClass": "gold" }
+    ]
+  },
+  "projects": {
+    "eyebrow": "What I've Built",
+    "title": "Project Showcase",
+    "subtitle": "From science experiments to software — hands-on learning through building.",
+    "list": [
+      {
+        "thumbEmoji": "💧",
+        "thumbBg": "linear-gradient(135deg,#0d2b0d,#1a4d1a)",
+        "type": "Science / IoT",
+        "name": "Smart Irrigation System",
+        "desc": "An automated plant-watering system using soil moisture sensors that triggers a pump when soil dryness is detected. Reduces water waste by 40%.",
+        "tags": ["Arduino", "Soil Sensor", "IoT"],
+        "award": "🏆 School Innovation Award Winner"
+      },
+      {
+        "thumbEmoji": "🏛",
+        "thumbBg": "linear-gradient(135deg,#1a0d2e,#2d1457)",
+        "type": "Game Development · Scratch",
+        "name": "Temple Adventure",
+        "desc": "A multi-level 2D adventure game designed in Scratch with increasing difficulty, a scoring system, animated characters, and custom background art.",
+        "tags": ["Scratch", "Game Design", "Animation"],
+        "award": null
+      },
+      {
+        "thumbEmoji": "🌍",
+        "thumbBg": "linear-gradient(135deg,#0d1f2e,#1a3e57)",
+        "type": "Web Development",
+        "name": "Climate Change Awareness Website",
+        "desc": "A fully responsive educational website built from scratch using HTML and CSS, covering climate causes, effects, and actionable steps with interactive infographics.",
+        "tags": ["HTML", "CSS", "Responsive"],
+        "award": null
+      }
+    ]
+  },
+  "certificates": {
+    "eyebrow": "Recognition",
+    "title": "Certificates & Awards",
+    "subtitle": "A collection of credentials earned through hard work and dedication.",
+    "list": [
+      { "icon": "🥇", "name": "Abacus Olympiad Gold",      "issuer": "International · 2024" },
+      { "icon": "🥈", "name": "Essay Writing Silver",       "issuer": "International · 2024" },
+      { "icon": "🥉", "name": "Speaker Competition Bronze", "issuer": "International · 2023" },
+      { "icon": "⭐", "name": "Young Scientist Top 20",     "issuer": "National · 2023" },
+      { "icon": "🏆", "name": "School Innovation Award",    "issuer": "School Level · 2024" },
+      { "icon": "📜", "name": "GEMMA Leadership Award",     "issuer": "Club · 2023" },
+      { "icon": "🎖", "name": "Math Olympiad Finalist",     "issuer": "State Level · 2022" },
+      { "icon": "🎨", "name": "Painting Olympics",          "issuer": "Participation · 2023" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Competencies",
+    "title": "Skills",
+    "subtitle": "A blend of academic, technical, and interpersonal abilities — continuously developing.",
+    "groups": [
+      {
+        "title": "📐 Academic Skills",
+        "items": [
+          { "name": "Mental Math (Abacus)", "pct": 96 },
+          { "name": "Logical Reasoning",   "pct": 92 },
+          { "name": "Problem Solving",     "pct": 90 },
+          { "name": "Scientific Analysis", "pct": 88 }
+        ]
+      },
+      {
+        "title": "💻 Technical Skills",
+        "items": [
+          { "name": "Scratch Programming",      "pct": 85 },
+          { "name": "HTML & CSS",               "pct": 75 },
+          { "name": "Canva / Design Tools",     "pct": 80 },
+          { "name": "PowerPoint / Presentations","pct": 90 }
+        ]
+      },
+      {
+        "title": "🤝 Soft Skills",
+        "items": [
+          { "name": "Leadership",              "pct": 88 },
+          { "name": "Public Speaking",         "pct": 85 },
+          { "name": "Teamwork & Collaboration","pct": 92 },
+          { "name": "Creativity & Innovation", "pct": 90 }
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "My Writing",
+    "title": "Student Blog",
+    "subtitle": "Sharing what I learn, experience, and believe — one article at a time.",
+    "posts": [
+      {
+        "tag": "Mathematics",
+        "tagColor": "var(--accent2)",
+        "tagBg": "rgba(93,214,176,0.1)",
+        "date": "April 12, 2024",
+        "title": "How Abacus Improved My Mental Math Skills",
+        "excerpt": "When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds...",
+        "content": "<p>When I first joined the Abacus Club in Grade 6, I could barely multiply two-digit numbers in my head. Two years later, I can solve 3-digit additions in under 2 seconds. The journey from beginner to State-level finalist taught me one thing above all else: the brain is trainable.</p><p>Abacus isn't just a counting tool — it's a mental framework. You learn to visualize beads on a mental board, which activates spatial and numerical reasoning simultaneously. Research shows that consistent abacus practice increases the brain's grey matter in areas responsible for numerical processing.</p><p>My biggest breakthrough came during the 2023 State Championship. I had been practicing 45 minutes daily for three months. When the problems appeared on screen, my hands moved instinctively — but more importantly, my mental image of the abacus was crystal clear. I finished 20 seconds before the next competitor.</p><p>If you want to improve your math speed, I recommend starting with simple abacus exercises: just 15 minutes a day, consistent, for 30 days. The compound effect is remarkable. Your brain genuinely rewires itself.</p>"
+      },
+      {
+        "tag": "Experience",
+        "tagColor": "var(--accent)",
+        "tagBg": "rgba(124,106,247,0.1)",
+        "date": "February 3, 2024",
+        "title": "My Experience at the International Student Speaker Competition",
+        "excerpt": "Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady...",
+        "content": "<p>Standing on stage in front of 200 people from 18 different countries, I realized how much the Public Speaking Club had transformed me. My legs were shaking, but my voice was steady.</p><p>The competition was held in Singapore. Each participant had 5 minutes to speak on a topic drawn randomly 30 minutes prior. My topic: \"Technology is making us less human.\" I had to argue — and believe — one side within half an hour.</p><p>I chose to argue against the statement. My argument: technology, when used intentionally, amplifies our most human qualities — empathy, creativity, and connection. I referenced the use of social media in disaster relief, AI in medical diagnosis, and coding clubs that bring kids from different backgrounds together. Like ours.</p><p>I won the Bronze Medal. But more importantly, I left Singapore with four new friends from Korea, Brazil, and Kenya. We still talk. That's technology making us more human, not less.</p><p>To every student who thinks they can't speak publicly: you absolutely can. Join a club. Practice in front of a mirror. Start with two minutes. Grow from there. The stage is waiting for you.</p>"
+      },
+      {
+        "tag": "Technology",
+        "tagColor": "var(--accent3)",
+        "tagBg": "rgba(247,161,106,0.1)",
+        "date": "December 18, 2023",
+        "title": "Why Coding is the Most Important Skill for Future Careers",
+        "excerpt": "Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language of the future...",
+        "content": "<p>Every industry is transforming. Healthcare uses AI. Banks run on algorithms. Farms use IoT sensors. Learning to code isn't just about becoming a programmer — it's about understanding the language the future is written in.</p><p>I started coding in Scratch, which might sound basic. But Scratch taught me the fundamentals of computational thinking: breaking a problem into smaller pieces, designing loops, handling conditions, debugging when things go wrong. These are cognitive skills that apply everywhere — from writing a persuasive essay to engineering a satellite.</p><p>When I built my Climate Change Awareness website in HTML and CSS, I wasn't just learning syntax. I was learning to communicate: how to structure information, choose typography, create visual hierarchy, and guide a reader through an argument. The skills of a developer overlap completely with the skills of a writer, designer, and analyst.</p><p>My advice to anyone starting out: don't wait until you're \"ready.\" Open Scratch today. Build something ugly and broken. Fix it. Build something better. The only way to learn coding is by coding.</p><p>In ten years, the students who learned to code today will be the ones shaping the world everyone else lives in. I'd rather be a shaper than a bystander.</p>"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "What Others Say",
+    "title": "Testimonials",
+    "list": [
+      {
+        "text": "Aarav consistently demonstrates curiosity, discipline, and leadership in every activity he participates in. His ability to grasp complex concepts quickly and then explain them to others sets him apart.",
+        "name": "Mrs. Meera Sharma",
+        "role": "Mathematics Teacher",
+        "initials": "MS",
+        "avatarBg": "rgba(124,106,247,0.15)",
+        "avatarColor": "var(--accent)"
+      },
+      {
+        "text": "The GEMMA Clubs have significantly improved Aarav's confidence and problem-solving abilities. We've watched him grow from a shy child into a poised young leader who takes initiative.",
+        "name": "Rajan Sharma",
+        "role": "Parent",
+        "initials": "RS",
+        "avatarBg": "rgba(93,214,176,0.15)",
+        "avatarColor": "var(--accent2)"
+      },
+      {
+        "text": "As his club mentor, watching Aarav go from participant to mentor himself has been remarkable. He brings fresh ideas and genuine enthusiasm that motivates everyone around him.",
+        "name": "Mr. Prashant Kumar",
+        "role": "GEMMA Club Coordinator",
+        "initials": "PK",
+        "avatarBg": "rgba(247,161,106,0.15)",
+        "avatarColor": "var(--accent3)"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "title": "Contact Me",
+    "subtitle": "Reach out for collaborations, competitions, or just to say hello!",
+    "email": "aarav.sharma@example.com",
+    "school": "Sunrise International School",
+    "location": "Mumbai, Maharashtra, India",
+    "socials": [
+      { "icon": "💼", "title": "LinkedIn" },
+      { "icon": "🐦", "title": "Twitter" },
+      { "icon": "💻", "title": "GitHub" },
+      { "icon": "📸", "title": "Instagram" }
+    ]
+  },
+  "footer": {
+    "name": "Aarav Sharma",
+    "grade": "Grade 8",
+    "school": "Sunrise International School",
+    "email": "aarav.sharma@example.com",
+    "year": "2024",
+    "city": "Mumbai, India",
+    "club": "GEMMA Club Portfolio"
+  }
+}
